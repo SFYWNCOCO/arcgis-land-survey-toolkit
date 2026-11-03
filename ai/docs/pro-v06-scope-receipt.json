@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "proposal": "CULTIVATED-GROUPS-AND-QA",
+  "module": "cultivated-projects",
+  "n_changed": 34,
+  "allowed": [
+    "ARCGIS/land_survey_toolkit/*",
+    "ARCGIS/pro_ai_bridge/*",
+    "高标准/项目参数.json",
+    "config/proposal_scopes.json"
+  ],
+  "violations": [],
+  "attribution": "content_delta_only_writer_unknown",
+  "baseline": "temp/pro-ai-cultivated-groups-baseline.json",
+  "raw_receipt": "temp/cultivated-groups-final-scope.json",
+  "note": "沿用写前内容基线；历史已存在的脏路径不推断写者。"
+}

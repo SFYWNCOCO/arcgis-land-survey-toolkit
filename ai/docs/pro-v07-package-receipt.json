@@ -1,0 +1,23 @@
+{
+  "packages": [
+    {
+      "path": "D:\\work\\.openclaw\\ARCGIS\\pro_ai_bridge\\dist\\ProAiBridge-0.7.0.esriAddInX",
+      "installed": "C:\\Users\\Administrator\\Documents\\ArcGIS\\AddIns\\ArcGISPro\\{D4CB6CC4-610D-4BDA-9A94-AC49CE8E45F2}\\ProAiBridge-0.7.0.esriAddInX",
+      "sha256": "7697cc6dfc7aac3060845b092293a2c11a1462ba38266e1f0104e7873db62a20",
+      "entries": 3
+    },
+    {
+      "path": "D:\\work\\.openclaw\\ARCGIS\\land_survey_toolkit\\addin\\dist\\SupplementaryCultivatedLandAcceptance_1.60_20261027_223026.esriAddInX",
+      "installed": "C:\\Users\\Administrator\\Documents\\ArcGIS\\AddIns\\ArcGISPro\\{83A6E23E-58CE-4B92-BC7A-7C5012A8BC31}\\SupplementaryCultivatedLandAcceptance_1.60_20261027_223026.esriAddInX",
+      "sha256": "3a86d3f8a4184e02cae5e87d32680f1825ee0e6d04194924f18102cc46e6c838",
+      "entries": 64
+    }
+  ],
+  "js_syntax": "4 passed",
+  "previous_06_restored_sha256": "ee446433194c821cc1a6e0e2759d9765e9840be6a324b118236afc11f35045e4",
+  "limits": [
+    "No provider credentials: online loading unverified",
+    "Physical mouse click blocked by computer-use coordinate geometry",
+    "Sampling C# DLL reused from 1.59; Python/toolbox/templates updated"
+  ]
+}

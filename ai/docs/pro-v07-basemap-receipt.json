@@ -1,0 +1,44 @@
+{
+  "ok": true,
+  "result": {
+    "sources": [
+      {
+        "id": "amap_vector",
+        "label": "高德地图",
+        "status": "NEEDS_CONFIGURATION",
+        "coordinate_system": "GCJ-02",
+        "purpose": "browser_preview",
+        "source_gsd_status": "UNVERIFIED",
+        "positional_accuracy_status": "UNVERIFIED"
+      },
+      {
+        "id": "amap_satellite",
+        "label": "高德卫星影像",
+        "status": "NEEDS_CONFIGURATION",
+        "coordinate_system": "GCJ-02",
+        "purpose": "browser_preview",
+        "source_gsd_status": "UNVERIFIED",
+        "positional_accuracy_status": "UNVERIFIED"
+      },
+      {
+        "id": "tianditu_vector",
+        "label": "天地图矢量",
+        "status": "NEEDS_CONFIGURATION",
+        "coordinate_system": "Web Mercator",
+        "purpose": "browser_preview",
+        "source_gsd_status": "UNVERIFIED",
+        "positional_accuracy_status": "UNVERIFIED"
+      },
+      {
+        "id": "tianditu_image",
+        "label": "天地图影像",
+        "status": "NEEDS_CONFIGURATION",
+        "coordinate_system": "Web Mercator",
+        "purpose": "browser_preview",
+        "source_gsd_status": "UNVERIFIED",
+        "positional_accuracy_status": "UNVERIFIED"
+      }
+    ],
+    "authorized_services": "采样助手：授权 XYZ/WMTS 服务 JSON 或 ArcGIS 缓存 MapServer；阿里云/单位服务需提供实际地址与授权。"
+  }
+}

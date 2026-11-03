@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <PlatformTarget>x64</PlatformTarget>
+    <RuntimeIdentifier>win10-x64</RuntimeIdentifier>
+    <AssemblyName>AcceptanceAddin</AssemblyName>
+    <RootNamespace>AcceptanceAddin</RootNamespace>
+    <PackageType>addin</PackageType>
+    <TargetFileName>SupplementaryCultivatedLandAcceptance</TargetFileName>
+    <ArcGISProInstallDir Condition="'$(ArcGISProInstallDir)' == ''">$(ARCGIS_PRO_HOME)</ArcGISProInstallDir>
+  </PropertyGroup>
+  <Import Project="$(ArcGISProInstallDir)\bin\Esri.ProApp.SDK.Desktop.targets" Condition="'$(UseEsriTargets)' != 'false' and Exists('$(ArcGISProInstallDir)\bin\Esri.ProApp.SDK.Desktop.targets')" />
+  <PropertyGroup Condition="'$(ArcGISProInstallDir)' == '' and '$(ArcGISFolder)' != ''">
+    <ArcGISProInstallDir>$(ArcGISFolder)</ArcGISProInstallDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\..\ai\addin\*.cs" Link="Ai\%(Filename)%(Extension)" />
+    <Content Include="..\..\ai\tools.json" Link="tools.json" CopyToOutputDirectory="Always" />
+    <Reference Include="ArcGIS.Desktop.Layouts"><HintPath>$(ArcGISProInstallDir)\bin\Extensions\Layout\ArcGIS.Desktop.Layouts.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="ArcGIS.Desktop.Core"><HintPath>$(ArcGISProInstallDir)\bin\Extensions\Core\ArcGIS.Desktop.Core.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="ArcGIS.Desktop.Framework"><HintPath>$(ArcGISProInstallDir)\bin\ArcGIS.Desktop.Framework.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="ArcGIS.Desktop.Extensions"><HintPath>$(ArcGISProInstallDir)\bin\Extensions\DesktopExtensions\ArcGIS.Desktop.Extensions.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="ArcGIS.Core"><HintPath>$(ArcGISProInstallDir)\bin\ArcGIS.Core.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="ArcGIS.Desktop.Catalog"><HintPath>$(ArcGISProInstallDir)\bin\Extensions\Catalog\ArcGIS.Desktop.Catalog.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="ArcGIS.Desktop.Mapping"><HintPath>$(ArcGISProInstallDir)\bin\Extensions\Mapping\ArcGIS.Desktop.Mapping.dll</HintPath><Private>false</Private></Reference>
+    <Reference Include="ArcGIS.Desktop.Editing"><HintPath>$(ArcGISProInstallDir)\bin\Extensions\Editing\ArcGIS.Desktop.Editing.dll</HintPath><Private>false</Private></Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config.daml" CopyToOutputDirectory="Never" />
+    <Content Include="..\..\toolboxes\ParcelTools.pyt" Link="Install\toolboxes\ParcelTools.pyt" CopyToOutputDirectory="Always" />
+    <Content Include="..\..\toolboxes\GridSampling.pyt" Link="Install\toolboxes\GridSampling.pyt" CopyToOutputDirectory="Always" />
+    <Content Include="..\..\templates\*" Link="Install\templates\%(Filename)%(Extension)" CopyToOutputDirectory="Always" />
+    <Content Include="..\..\toolboxes\SupplementaryCultivatedLandAcceptance.pyt" Link="Install\toolboxes\SupplementaryCultivatedLandAcceptance.pyt" CopyToOutputDirectory="Always" />
+    <Content Include="..\..\toolboxes\GridSampling.pyt.xml" Link="Install\toolboxes\GridSampling.pyt.xml" CopyToOutputDirectory="Always" />
+    <Content Include="..\..\toolboxes\SupplementaryCultivatedLandAcceptance.pyt.xml" Link="Install\toolboxes\SupplementaryCultivatedLandAcceptance.pyt.xml" CopyToOutputDirectory="Always" />
+    <Content Include="..\..\acceptance\**\*.py" Link="Install\acceptance\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="Always" />
+    <Content Include="..\..\scripts\setup_quality_gdb.py" Link="Install\scripts\setup_quality_gdb.py" CopyToOutputDirectory="Always" />
+    <Content Include="..\..\scripts\delivery_package.py" Link="Install\scripts\delivery_package.py" CopyToOutputDirectory="Always" />
+  </ItemGroup>
+</Project>

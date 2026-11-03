@@ -1,0 +1,12 @@
+{
+  "ok": false,
+  "reason": "保持原基线重试，因基线后共享Git HEAD变化而未完成范围校验",
+  "raw_evidence": "temp/pro-ai-v05-scope.json",
+  "lock_preserved": true,
+  "baseline_replaced": false,
+  "previous_reason": "内容范围采集被活跃Pro持有的.sr.lock拒绝读取，未完成校验",
+  "final_retry_evidence": "temp/pro-ai-v05-final-scope.json",
+  "baseline_head": "564b582e9e047d48eb0994ee92b68fb1fee08bc4",
+  "current_head": "d91f2ffff1f659a5ff9b27aaa5ceb43304e41006",
+  "committed_project_or_registry_paths": []
+}

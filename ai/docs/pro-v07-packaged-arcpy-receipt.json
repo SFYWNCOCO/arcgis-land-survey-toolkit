@@ -1,0 +1,9 @@
+{
+  "runtime": "3.9.16 [MSC v.1931 64 bit (AMD64)]",
+  "package": "D:\\work\\.openclaw\\ARCGIS\\land_survey_toolkit\\addin\\dist\\SupplementaryCultivatedLandAcceptance_1.60_20261027_223026.esriAddInX",
+  "templates": 2,
+  "tianditu_vector": true,
+  "toolbox_imported": true,
+  "online_loading": "UNVERIFIED_NO_CREDENTIALS",
+  "executed_download": false
+}

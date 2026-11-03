@@ -1,0 +1,17 @@
+{
+  "version": "0.5.0",
+  "final_addin_sha256": "56b54a8283fbb65e601c3552fd38bfe59c05dbb0ec6fc9c53a7e8833339ac88f",
+  "final_package_installed": true,
+  "reason": "用户保存关闭Pro后安装完成；已核对安装包及实际载入DLL哈希，最终二进制四项现场回归全部通过",
+  "native_tools_exercised": 35,
+  "native_calls_recorded": 165,
+  "ui_click_verified": false,
+  "keyboard_shortcuts_verified": false,
+  "previous_pilot_sha256": "04d8f2e47f107cba3e1a4249afe1df02fe0672a02aeeaba4cf6db2e89ae91ebc",
+  "installed_addin_sha256": "56b54a8283fbb65e601c3552fd38bfe59c05dbb0ec6fc9c53a7e8833339ac88f",
+  "loaded_dll_sha256": "2a656078438361ddb70b936d12f07fd04fdbfce8e47bb4c788f4c56ce8381a64",
+  "loaded_dll_matches_build": true,
+  "final_live_tests_passed": 4,
+  "final_live_duration_seconds": 56.68,
+  "final_test_project": "D:\\work\\.openclaw\\temp\\pro-ai-v05-final-live-01\\BridgeSmoke.aprx"
+}

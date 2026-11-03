@@ -1,0 +1,15 @@
+{
+  "ok": false,
+  "proposal": "PRO-AI-BRIDGE-V04",
+  "allowed": [
+    "ARCGIS/pro_ai_bridge/*",
+    "config/proposal_scopes.json"
+  ],
+  "violations": [
+    "football-betting-system/data/injuries/injuries_2026-10-26.json",
+    "football-betting-system/data/odds/espn_2026-10-26.json",
+    "football-betting-system/data/odds/espn_2026-10-27.json"
+  ],
+  "first_attempt": "采集时Git状态变化，退出失败；保留原始基线重试",
+  "note": "未重采基线；额外数据路径的写者未确认，未修改或清理这些路径"
+}

@@ -1,0 +1,149 @@
+[
+  {
+    "name": "run_geoprocessing",
+    "arguments": {
+      "tool": "management.CopyFeatures",
+      "parameters": [
+        "D:\\work\\.openclaw\\temp\\pro-ai-v052-final-live-01\\smoke.gdb\\bridge_points",
+        "D:\\work\\.openclaw\\temp\\pro-ai-v052-final-live-01\\moved_result.shp"
+      ],
+      "confirm": true
+    },
+    "response": {
+      "ok": true,
+      "result": {
+        "job_id": "1fb3a38ab71845a59f397d09e53aa9a3",
+        "status": "queued",
+        "tool": "management.CopyFeatures"
+      }
+    }
+  },
+  {
+    "name": "get_job",
+    "arguments": {
+      "job_id": "1fb3a38ab71845a59f397d09e53aa9a3"
+    },
+    "response": {
+      "ok": true,
+      "result": {
+        "job_id": "1fb3a38ab71845a59f397d09e53aa9a3",
+        "project": "D:\\work\\.openclaw\\temp\\pro-ai-v052-final-live-01\\BridgeSmoke.aprx",
+        "tool": "management.CopyFeatures",
+        "status": "running",
+        "value": "",
+        "messages": "",
+        "cancel_requested": false,
+        "created_at": "2026-10-26T10:06:47.3302799+00:00",
+        "started_at": "2026-10-26T10:06:47.3302959+00:00",
+        "finished_at": null,
+        "elapsed_ms": 16,
+        "output_path": null,
+        "can_load_output": false
+      }
+    }
+  },
+  {
+    "name": "get_job",
+    "arguments": {
+      "job_id": "1fb3a38ab71845a59f397d09e53aa9a3"
+    },
+    "response": {
+      "ok": true,
+      "result": {
+        "job_id": "1fb3a38ab71845a59f397d09e53aa9a3",
+        "project": "D:\\work\\.openclaw\\temp\\pro-ai-v052-final-live-01\\BridgeSmoke.aprx",
+        "tool": "management.CopyFeatures",
+        "status": "running",
+        "value": "",
+        "messages": "",
+        "cancel_requested": false,
+        "created_at": "2026-10-26T10:06:47.3302799+00:00",
+        "started_at": "2026-10-26T10:06:47.3302959+00:00",
+        "finished_at": null,
+        "elapsed_ms": 543,
+        "output_path": null,
+        "can_load_output": false
+      }
+    }
+  },
+  {
+    "name": "get_job",
+    "arguments": {
+      "job_id": "1fb3a38ab71845a59f397d09e53aa9a3"
+    },
+    "response": {
+      "ok": true,
+      "result": {
+        "job_id": "1fb3a38ab71845a59f397d09e53aa9a3",
+        "project": "D:\\work\\.openclaw\\temp\\pro-ai-v052-final-live-01\\BridgeSmoke.aprx",
+        "tool": "management.CopyFeatures",
+        "status": "succeeded",
+        "value": "D:\\work\\.openclaw\\temp\\pro-ai-v052-final-live-01\\moved_result.shp",
+        "messages": "开始时间: 2026年10月26日 18:06:47; 运行 成功，结束时间： 2026年10月26日 18:06:47 (历时: 0.33 秒)",
+        "cancel_requested": false,
+        "created_at": "2026-10-26T10:06:47.3302799+00:00",
+        "started_at": "2026-10-26T10:06:47.3302959+00:00",
+        "finished_at": "2026-10-26T10:06:47.9244159+00:00",
+        "elapsed_ms": 594,
+        "output_path": "D:\\work\\.openclaw\\temp\\pro-ai-v052-final-live-01\\moved_result.shp",
+        "can_load_output": true
+      }
+    }
+  },
+  {
+    "name": "load_job_output",
+    "arguments": {
+      "job_id": "1fb3a38ab71845a59f397d09e53aa9a3",
+      "confirm": true
+    },
+    "response": {
+      "ok": false,
+      "error": "无法读取任务结果，请检查数据是否已移动、删除或被占用：The table was not found."
+    }
+  },
+  {
+    "name": "load_job_output",
+    "arguments": {
+      "job_id": "1fb3a38ab71845a59f397d09e53aa9a3",
+      "confirm": true
+    },
+    "response": {
+      "ok": true,
+      "result": {
+        "loaded": true,
+        "already_loaded": false,
+        "job_id": "1fb3a38ab71845a59f397d09e53aa9a3",
+        "layer": "CIMPATH=bridge_map/moved_result.json",
+        "name": "moved_result",
+        "path": "D:\\work\\.openclaw\\temp\\pro-ai-v052-final-live-01\\moved_result.shp",
+        "map_uri": "CIMPATH=map/map.json"
+      }
+    }
+  },
+  {
+    "name": "get_feature_count",
+    "arguments": {
+      "layer": "CIMPATH=bridge_map/moved_result.json"
+    },
+    "response": {
+      "ok": true,
+      "result": {
+        "count": 3
+      }
+    }
+  },
+  {
+    "name": "remove_layer",
+    "arguments": {
+      "layer": "CIMPATH=bridge_map/moved_result.json",
+      "confirm": true
+    },
+    "response": {
+      "ok": true,
+      "result": {
+        "removed": true,
+        "source_deleted": false
+      }
+    }
+  }
+]

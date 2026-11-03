@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-19",
+  "application": "ArcGIS Pro 3.1.5 / ArcPy Python 3.9.16",
+  "scope": "public sample format/import smoke validation only; not a Guangxi acceptance project",
+  "rtk_csv": {
+    "source": "https://thisground.org/assets/downloads/lincoln1.csv",
+    "license": "CC BY 4.0; attribution text retained during validation",
+    "source_crs": "WGS 84 (EPSG:4326)",
+    "target_crs_test": "WGS 84 / UTM zone 18N (EPSG:32618)",
+    "source_records": 30,
+    "raw_point_count": 30,
+    "projected_point_count": 30,
+    "source_preserved": true,
+    "notes": "records document FIX/RTK, antenna height, lateral RMS, and ellipsoidal height; manual survey review remains required"
+  },
+  "geojson": {
+    "source": "https://thisground.org/assets/downloads/gardner_solution.geojson",
+    "license": "CC BY 4.0",
+    "source_crs": "WGS 84 (RFC 7946)",
+    "source_feature_count": 25,
+    "output_counts": {"Point": 18, "Polyline": 4, "Polygon": 3},
+    "source_preserved": true
+  },
+  "cad": {
+    "source_page": "https://www.nsw.gov.au/environment-land-and-water/surveying/surveyor-generals-directions/no-7-2017-regulation-resources",
+    "format": "DXF",
+    "result": "ArcGIS CADToGeodatabase conversion completed; generated feature classes contain zero entities",
+    "limitation": "government schedule template is a blank form with GDA2020/MGA placeholders and no specified MGA zone/control coordinates; spatial placement not validated"
+  },
+  "toolbox": {
+    "custom_tool_count": 9,
+    "vector_tool": "ImportVector_scqa",
+    "geoprocessing_execution_note": "A direct dynamic GP invocation in ArcGIS Pro 3.1.5 now succeeds after the execute method restores the packaged core-module path. Mixed GeoJSON output counts are Point 18, Polyline 4, Polygon 3. Add-In ribbon button/dialog still needs desktop visual verification after Pro restart."
+  }
+}

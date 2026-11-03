@@ -1,0 +1,74 @@
+[
+  {
+    "name": "run_geoprocessing",
+    "arguments": {
+      "tool": "management.GetCount",
+      "parameters": [
+        "bridge_points"
+      ],
+      "confirm": true
+    },
+    "response": {
+      "ok": true,
+      "result": {
+        "job_id": "8cbeee528d954fcab58bf0d64b9e0098",
+        "status": "queued",
+        "tool": "management.GetCount"
+      }
+    }
+  },
+  {
+    "name": "get_job",
+    "arguments": {
+      "job_id": "8cbeee528d954fcab58bf0d64b9e0098"
+    },
+    "response": {
+      "ok": true,
+      "result": {
+        "job_id": "8cbeee528d954fcab58bf0d64b9e0098",
+        "project": "D:\\work\\.openclaw\\temp\\pro-ai-v02-live-02\\BridgeSmoke.aprx",
+        "tool": "management.GetCount",
+        "status": "running",
+        "value": "",
+        "messages": "",
+        "cancel_requested": false
+      }
+    }
+  },
+  {
+    "name": "get_job",
+    "arguments": {
+      "job_id": "8cbeee528d954fcab58bf0d64b9e0098"
+    },
+    "response": {
+      "ok": true,
+      "result": {
+        "job_id": "8cbeee528d954fcab58bf0d64b9e0098",
+        "project": "D:\\work\\.openclaw\\temp\\pro-ai-v02-live-02\\BridgeSmoke.aprx",
+        "tool": "management.GetCount",
+        "status": "running",
+        "value": "",
+        "messages": "",
+        "cancel_requested": false
+      }
+    }
+  },
+  {
+    "name": "get_job",
+    "arguments": {
+      "job_id": "8cbeee528d954fcab58bf0d64b9e0098"
+    },
+    "response": {
+      "ok": true,
+      "result": {
+        "job_id": "8cbeee528d954fcab58bf0d64b9e0098",
+        "project": "D:\\work\\.openclaw\\temp\\pro-ai-v02-live-02\\BridgeSmoke.aprx",
+        "tool": "management.GetCount",
+        "status": "succeeded",
+        "value": "3",
+        "messages": "开始时间: 2026年10月26日 1:54:06; 行计数 = 3; 运行 成功，结束时间： 2026年10月26日 1:54:06 (历时: 0.15 秒)",
+        "cancel_requested": false
+      }
+    }
+  }
+]

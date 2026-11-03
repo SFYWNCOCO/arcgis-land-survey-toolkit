@@ -1,0 +1,76 @@
+{
+  "healthy": {
+    "ok": true,
+    "result": {
+      "status": "NO_ISSUES_IN_CHECKED_SCOPE",
+      "feature_count": 2,
+      "layer": "CIMPATH=bridge_map/join_zones.json",
+      "id_field": "zone_name",
+      "oid_field": "OBJECTID",
+      "checked_required_fields": [],
+      "issue_count": 0,
+      "issues": [],
+      "issues_truncated": false,
+      "scope": "只读检查编号空值/重复、指定必填属性和空几何；未检查重叠、自相交、面积、影像、正式单元或验收条件。",
+      "next_step": "使用本结果layer和问题where调用select_by_attribute，再zoom_to_selection；先核对工程及地图。"
+    }
+  },
+  "anomalies": {
+    "ok": true,
+    "result": {
+      "status": "ISSUES_FOUND",
+      "feature_count": 2,
+      "layer": "CIMPATH=bridge_map/join_zones.json",
+      "id_field": "qa_id",
+      "oid_field": "OBJECTID",
+      "checked_required_fields": [
+        "qa_required"
+      ],
+      "issue_count": 3,
+      "issues": [
+        {
+          "oid": 1,
+          "parcel_id": "dup",
+          "code": "必填字段为空",
+          "field": "qa_required",
+          "where": "OBJECTID = 1"
+        },
+        {
+          "oid": 1,
+          "parcel_id": "dup",
+          "code": "编号重复",
+          "field": "qa_id",
+          "where": "OBJECTID = 1"
+        },
+        {
+          "oid": 2,
+          "parcel_id": "dup",
+          "code": "编号重复",
+          "field": "qa_id",
+          "where": "OBJECTID = 2"
+        }
+      ],
+      "issues_truncated": false,
+      "scope": "只读检查编号空值/重复、指定必填属性和空几何；未检查重叠、自相交、面积、影像、正式单元或验收条件。",
+      "next_step": "使用本结果layer和问题where调用select_by_attribute，再zoom_to_selection；先核对工程及地图。"
+    }
+  },
+  "located": {
+    "ok": true,
+    "result": {
+      "selected": 1
+    }
+  },
+  "selected_scope_refused": {
+    "ok": false,
+    "error": "请先清除选择和定义查询，再对完整图层体检；不会把部分检查当作全图检查。"
+  },
+  "scan_limit_refused": {
+    "ok": false,
+    "error": "地块数量超过本次体检上限，请分批导出后检查；本次不发布通过结果。"
+  },
+  "missing_field_refused": {
+    "ok": false,
+    "error": "字段不存在：not_a_field"
+  }
+}

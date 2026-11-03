@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "label": "单位授权 WMTS 影像（请填写实际资料）",
+  "tile_scheme": "wmts_web_mercator",
+  "coordinate_system": "EPSG:3857",
+  "tile_size": 256,
+  "matrix_origin": "global_north_west",
+  "level_zero_resolution": 156543.03392804097,
+  "url": "https://YOUR-SERVICE.example/wmts?SERVICE=WMTS&REQUEST=GetTile&VERSION=1.0.0&LAYER=YOUR_LAYER&STYLE=default&TILEMATRIXSET=YOUR_MATRIX_SET&FORMAT=image/jpeg&TILEMATRIX={z}&TILEROW={y}&TILECOL={x}&key={tk}",
+  "version": "填写服务版本或更新时间",
+  "license": "填写使用许可、下载和制图范围",
+  "authorization_reference": "填写阿里云产品订单或单位授权文件编号",
+  "min_zoom": 12,
+  "max_zoom": 18,
+  "demo_only": true
+}

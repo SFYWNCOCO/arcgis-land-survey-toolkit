@@ -1,0 +1,25 @@
+{
+  "project": "D:\\work\\.openclaw\\temp\\pro-ai-v04-live-02\\BridgeSmoke.aprx",
+  "buffer_areas_m2": {
+    "D:\\work\\.openclaw\\temp\\pro-ai-v04-live-02\\smoke.gdb\\buffer_result": [
+      45188.749733125995,
+      45188.74702096269,
+      45188.74504912204
+    ],
+    "D:\\work\\.openclaw\\temp\\pro-ai-v04-live-02\\buffer_without_extension.shp": [
+      45188.746797199885,
+      45188.746797161184,
+      45188.746797140884
+    ]
+  },
+  "clip_sample_ids": [
+    1,
+    2
+  ],
+  "dissolve_groups": [
+    "A",
+    "B"
+  ],
+  "expected_circle_area_m2": 45238.93421169302,
+  "tolerance": 0.02
+}

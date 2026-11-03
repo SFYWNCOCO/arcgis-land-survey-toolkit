@@ -1,0 +1,40 @@
+{
+  "requested_provider": "deepseek-account",
+  "requested_model": "deepseek-flash",
+  "credential_exported": false,
+  "events": [
+    {
+      "type": "session",
+      "sessionId": "session-0a08d454-cfd7-4670-83ac-4aa2310b2351",
+      "cwd": "D:\\work\\.openclaw"
+    },
+    {
+      "type": "tool_call",
+      "callId": "call_00_ET_djeey1Xr6zFjQs87Ch1C5832",
+      "tool": "mcp__pro-ai-bridge__get_status",
+      "input": {}
+    },
+    {
+      "type": "tool_result",
+      "callId": "call_00_ET_djeey1Xr6zFjQs87Ch1C5832",
+      "status": "completed",
+      "result": "{\"version\": \"0.1.0\", \"project\": \"D:\\\\work\\\\.openclaw\\\\temp\\\\pro-ai-live-04\\\\BridgeSmoke.aprx\", \"map\": \"Bridge Map\", \"pipe\": \"pro-ai-bridge-v1-52476\", \"process_id\": 52476, \"view_size\": {\"IsEmpty\": false, \"Width\": 1254, \"Height\": 835}, \"scale\": 11185.16401775139, \"dirty\": false, \"tools\": 22}"
+    },
+    {
+      "type": "tool_call",
+      "callId": "call_01_ET_qZlJdNEqNGksKUne3ayE4783",
+      "tool": "mcp__pro-ai-bridge__list_layers",
+      "input": {}
+    },
+    {
+      "type": "tool_result",
+      "callId": "call_01_ET_qZlJdNEqNGksKUne3ayE4783",
+      "status": "completed",
+      "result": "{\"layers\": [{\"name\": \"bridge_points\", \"uri\": \"CIMPATH=bridge_map/bridge_points.json\", \"type\": \"FeatureLayer\", \"visible\": true}], \"spatial_reference\": \"GCS_WGS_1984\"}"
+    },
+    {
+      "type": "final",
+      "text": "已实际调用两个只读工具，结果如下：\n\n- **工程名**：`BridgeSmoke.aprx`（完整路径 `D:\\work\\.openclaw\\temp\\pro-ai-live-04\\BridgeSmoke.aprx`）\n- **当前地图**：Bridge Map\n- **图层名**：`bridge_points`（FeatureLayer，可见）\n- **图层数量**：1\n- **空间参考**：GCS_WGS_1984\n\n补充状态：桥接版本 0.1.0，工程未修改（dirty=false），未执行任何其他调用或变更。"
+    }
+  ]
+}

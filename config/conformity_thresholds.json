@@ -1,0 +1,61 @@
+{
+  "source": {
+    "title": "广西补充耕地质量验收作业指导书（v1.1）§6.4、附录 A；GB 15618-2018",
+    "verified": true,
+    "verify_note": "阈值与 references/02-conformity-thresholds.md 逐项对照；污染管制值按 pH 分档。"
+  },
+  "indicators": {
+    "有效土层厚度": {
+      "type": "min_by_land_use",
+      "unit": "cm",
+      "thresholds": {"旱地": 40, "水浇地": 50, "水田": 50}
+    },
+    "土壤有机质含量": {
+      "type": "min_by_land_use",
+      "unit": "g/kg",
+      "thresholds": {"旱地": 8, "水浇地": 10, "水田": 12}
+    },
+    "土壤pH": {"type": "range", "min": 4.2, "max": 8.5, "unit": ""},
+    "地形坡度": {"type": "max", "max": 25, "unit": "°"},
+    "田面平整程度": {
+      "type": "ordinal",
+      "order": ["不平整", "基本平整", "平整"],
+      "min": "基本平整"
+    },
+    "道路通行条件": {
+      "type": "ordinal",
+      "order": ["不可通达", "基本可通达", "可通达"],
+      "min": "基本可通达"
+    },
+    "水资源保障条件": {
+      "type": "ordinal",
+      "order": ["不满足", "基本满足", "满足", "充分满足"],
+      "min": "基本满足"
+    },
+    "土壤侵入体及砾石": {
+      "type": "intrusion",
+      "counted_range_mm": [10, 100],
+      "max_percent": 20,
+      "forbidden_min_mm": 100,
+      "note": "每采样点 30 cm 深、30 cm×30 cm 土体内；直径 10–100 mm 含量≤20%，且不得出现 >100 mm。"
+    },
+    "土壤污染状况": {
+      "type": "pollution",
+      "standard": "GB 15618-2018 农用地土壤污染风险管制值",
+      "metals": {
+        "镉": {"unit": "mg/kg", "limits": [{"max_ph": 5.5, "limit": 1.5}, {"max_ph": 6.5, "limit": 2.0}, {"max_ph": 7.5, "limit": 3.0}, {"max_ph": null, "limit": 4.0}]},
+        "汞": {"unit": "mg/kg", "limits": [{"max_ph": 5.5, "limit": 2.0}, {"max_ph": 6.5, "limit": 2.5}, {"max_ph": 7.5, "limit": 4.0}, {"max_ph": null, "limit": 6.0}]},
+        "砷": {"unit": "mg/kg", "limits": [{"max_ph": 5.5, "limit": 200}, {"max_ph": 6.5, "limit": 150}, {"max_ph": 7.5, "limit": 120}, {"max_ph": null, "limit": 100}]},
+        "铅": {"unit": "mg/kg", "limits": [{"max_ph": 5.5, "limit": 400}, {"max_ph": 6.5, "limit": 500}, {"max_ph": 7.5, "limit": 700}, {"max_ph": null, "limit": 1000}]},
+        "铬": {"unit": "mg/kg", "limits": [{"max_ph": 5.5, "limit": 800}, {"max_ph": 6.5, "limit": 850}, {"max_ph": 7.5, "limit": 1000}, {"max_ph": null, "limit": 1300}]}
+      }
+    }
+  },
+  "direct_fail": [
+    {"key": "river_floodwater_protected", "label": "位于河道、泄洪区或自然保护地"},
+    {"key": "valley_peak_unprotected", "label": "易损毁的山谷/山顶部位且缺乏适当防护"},
+    {"key": "enclosure_shading", "label": "四周围挡妨碍耕作或光线郁闭严重"},
+    {"key": "buried_hardpan_1m", "label": "地表以下 1 m 内存在硬化路面、工矿废物、垃圾等填埋物"},
+    {"key": "redline_or_protected", "label": "位于生态保护红线、一级饮用水源保护区、25°以上陡坡、严重石漠化/沙化区、河湖管理范围、重点林区、国有林场等"}
+  ]
+}

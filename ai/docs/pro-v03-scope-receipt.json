@@ -1,0 +1,20 @@
+{
+  "ok": false,
+  "proposal": "PRO-AI-BRIDGE-V03",
+  "allowed": [
+    "ARCGIS/pro_ai_bridge/*",
+    "config/proposal_scopes.json"
+  ],
+  "violations": [
+    ".learnings/defects/20261026.json",
+    ".learnings/defects/20261026.md",
+    "generations/INDEX.jsonl",
+    "generations/gen_149/PROVENANCE.json",
+    "generations/gen_149/archive.json",
+    "generations/gen_149/bench.json",
+    "generations/gen_154/PROVENANCE.json",
+    "generations/gen_154/archive.json",
+    "generations/gen_154/bench.json"
+  ],
+  "note": "共享工作树额外变化；写者未知，未绕过或重采基线"
+}

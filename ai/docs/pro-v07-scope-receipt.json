@@ -1,0 +1,23 @@
+{
+  "global_check_ok": false,
+  "changed_paths": 58,
+  "concurrent_outside_declared_scope": [
+    "macau-mark-six/data/candidate_research_ledger.jsonl",
+    "macau-mark-six/data/candidate_research_prediction.json",
+    "macau-mark-six/data/candidate_research_settlements.jsonl",
+    "macau-mark-six/data/category_offset_prediction.json",
+    "macau-mark-six/data/category_offset_prediction_ledger.jsonl",
+    "macau-mark-six/data/category_offset_settlements.jsonl",
+    "macau-mark-six/data/constrained_simulation_ledger.jsonl",
+    "macau-mark-six/data/constrained_simulation_prediction.json",
+    "macau-mark-six/data/constrained_simulation_settlements.jsonl",
+    "macau-mark-six/data/legacy_reference/model_prediction.json",
+    "macau-mark-six/data/legacy_reference/unified_prediction_ledger.jsonl",
+    "macau-mark-six/data/legacy_reference/unified_settlements.jsonl",
+    "skills/workspace-file-management/SKILL.md"
+  ],
+  "attribution": "UNKNOWN_OTHER_WRITERS",
+  "task_edits_outside_declared_scope": [],
+  "baseline": "temp/basemap-chat-20261027-baseline.json",
+  "note": "Do not extend the declaration or roll back unrelated files to make this global check green. POI/vector changes within ARCGIS also include the other chat."
+}

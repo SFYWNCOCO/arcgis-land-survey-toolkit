@@ -1,0 +1,71 @@
+{
+  "version": "0.7.0",
+  "sampling_version": "1.60",
+  "date": "2026-10-27",
+  "installed": true,
+  "tools": {
+    "mcp": 40,
+    "native": 38
+  },
+  "tests": {
+    "bridge_passed": 105,
+    "bridge_default_live_skipped": 6,
+    "real_pro_passed": 6,
+    "real_pro_seconds": 55.57,
+    "sampling_passed": 478,
+    "sampling_skipped": 14,
+    "sampling_seconds": 15.01,
+    "preview_js_syntax_passed": 4,
+    "packaged_arcpy": "3.9.16 imported"
+  },
+  "loaded_dll_sha256": "2591514676f2983e83e52ebe97a748aaa72db243cc5eb49d50fd6efaafaba95e",
+  "fixture": "D:\\work\\.openclaw\\temp\\pro-ai-v07-live-01\\BridgeSmoke.aprx",
+  "final_test_pid": 46104,
+  "test_project_saved_and_closed": true,
+  "ui_verified": [
+    "native pane registered",
+    "accessible map settings and input hints",
+    "slash list populated after set_value",
+    "empty send disabled"
+  ],
+  "unverified": [
+    "provider online loading without API keys",
+    "Aliyun actual service missing",
+    "physical click/Enter/Shift+Enter/IME/scroll",
+    "DSH model rerun"
+  ],
+  "code_review": "Two P2 issues fixed; independent re-review found no further important issues",
+  "lint": {
+    "bridge": "passed",
+    "sampling": "68 diagnostics in existing module/test styles; not broadly reformatted"
+  },
+  "scope": {
+    "global_check_ok": false,
+    "changed_paths": 58,
+    "concurrent_outside_declared_scope": [
+      "macau-mark-six/data/candidate_research_ledger.jsonl",
+      "macau-mark-six/data/candidate_research_prediction.json",
+      "macau-mark-six/data/candidate_research_settlements.jsonl",
+      "macau-mark-six/data/category_offset_prediction.json",
+      "macau-mark-six/data/category_offset_prediction_ledger.jsonl",
+      "macau-mark-six/data/category_offset_settlements.jsonl",
+      "macau-mark-six/data/constrained_simulation_ledger.jsonl",
+      "macau-mark-six/data/constrained_simulation_prediction.json",
+      "macau-mark-six/data/constrained_simulation_settlements.jsonl",
+      "macau-mark-six/data/legacy_reference/model_prediction.json",
+      "macau-mark-six/data/legacy_reference/unified_prediction_ledger.jsonl",
+      "macau-mark-six/data/legacy_reference/unified_settlements.jsonl",
+      "skills/workspace-file-management/SKILL.md"
+    ],
+    "attribution": "UNKNOWN_OTHER_WRITERS",
+    "task_edits_outside_declared_scope": [],
+    "baseline": "temp/basemap-chat-20261027-baseline.json",
+    "note": "Do not extend the declaration or roll back unrelated files to make this global check green. POI/vector changes within ARCGIS also include the other chat."
+  },
+  "notes": [
+    "Sampling package reuses the 1.59 C# DLL; Python/toolbox/templates updated",
+    "Original 21-point business deliverable was not modified",
+    "No Git commit/push or DSH account changes",
+    "Disposable probes/projects and scope baseline retained under temp; one-off scripts and four JS probes removed"
+  ]
+}

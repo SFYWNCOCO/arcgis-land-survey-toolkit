@@ -1,0 +1,148 @@
+{
+  "version": "1.61",
+  "latest_release_file": "release-latest.json",
+  "date": "2026-10-28",
+  "product": "补充耕地验收工作台",
+  "guid": "{83A6E23E-58CE-4B92-BC7A-7C5012A8BC31}",
+  "installed": true,
+  "native_assemblies": [
+    "AcceptanceAddin.dll"
+  ],
+  "dock_panes": [
+    "AcceptanceAddin_Workspace"
+  ],
+  "tools": {
+    "mcp": 41,
+    "native": 39
+  },
+  "package": {
+    "path": "D:\\work\\.openclaw\\ARCGIS\\land_survey_toolkit\\addin\\dist\\SupplementaryCultivatedLandAcceptance_1.61_20261028_050919_011525.esriAddInX",
+    "entries": 199,
+    "bytes": 885747,
+    "sha256": "69AE59E8F2B19069FA6FCE0941C5E47073CB789F723BDBD13FC23187C02D8E4D",
+    "version": "1.61"
+  },
+  "installed_path": "C:\\Users\\Administrator\\Documents\\ArcGIS\\AddIns\\ArcGISPro\\{83A6E23E-58CE-4B92-BC7A-7C5012A8BC31}\\SupplementaryCultivatedLandAcceptance_1.61_20261028_050919_011525.esriAddInX",
+  "loaded_modules": [
+    {
+      "Name": "AcceptanceAddin.dll",
+      "Path": "C:\\Users\\Administrator\\AppData\\Local\\ESRI\\ArcGISPro\\AssemblyCache\\{83A6E23E-58CE-4B92-BC7A-7C5012A8BC31}\\AcceptanceAddin.dll",
+      "SHA256": "DA40AD222432925F311FF3FF58BDE9A5F349F7DD1BF60596D60C5D6A5978E03C"
+    }
+  ],
+  "tests": {
+    "ai_passed": 108,
+    "ai_live_default_skipped": 7,
+    "acceptance_passed": 478,
+    "acceptance_skipped": 14,
+    "native_pro_passed": 7,
+    "native_pro_seconds": 45.48,
+    "packaged_dynamic_gp": "check PASS; 1 synthetic projected polygon; status4 severity0"
+  },
+  "native_fixture": "D:\\work\\.openclaw\\temp\\unified-acceptance-v161-live-03\\BridgeSmoke.aprx",
+  "test_pid": 35396,
+  "saved_clean_and_closed": true,
+  "independent_review": "2 credential/scope issues fixed and independently rechecked; no remaining important issue found",
+  "old_ai_registration_archived": "D:\\work\\.openclaw\\_archive\\unified-acceptance-20261028\\ProAiBridge-0.7.0.esriAddInX",
+  "old_ai_loaded": false,
+  "ui": {
+    "verified": [
+      "native actual-selected tab matches requested navigation",
+      "both workflows remain instantiated",
+      "accessible field labels present"
+    ],
+    "limits": [
+      "screenshot FrameArrived timeout",
+      "accessibility channel timed out and returned inconsistent cached content; physical mouse/keyboard/IME/scroll not fully verified"
+    ]
+  },
+  "limits": [
+    "No provider keys or Aliyun actual endpoint: online loading unverified",
+    "No new commercial model/DSH roundtrip",
+    "Only Pro3.1.5/.NET6 verified"
+  ],
+  "notes": [
+    "Original business parcel/21-point artifacts unchanged",
+    "No Git commit/push or account settings changed",
+    "Read-only GP check intentionally reports messages without creating an output folder/JSON",
+    "Test projects/probes retained under temp; one-off scripts removed after use"
+  ],
+  "scope": {
+    "ok": true,
+    "changed_paths": 47,
+    "violations": [],
+    "baseline": "temp/unified-acceptance-20261028-baseline.json"
+  },
+  "latest_update": {
+    "version": "1.68",
+    "date": "2026-10-29",
+    "change": "AI连续执行轮数上限由24提高到100；get_status与当前发布说明同步为1.68。",
+    "package": {
+      "path": "D:\\work\\.openclaw\\ARCGIS\\land_survey_toolkit\\addin\\dist\\SupplementaryCultivatedLandAcceptance_1.68_20261029_215801_469681.esriAddInX",
+      "entries": 201,
+      "bytes": 939916,
+      "sha256": "D824B2999A04C78EFAD9E681E1798ADC696FC70D9987B32AEFB4DA434054FAC6",
+      "version": "1.68"
+    },
+    "installed_copy": {
+      "path": "C:\\Users\\Administrator\\Documents\\ArcGIS\\AddIns\\ArcGISPro\\{83A6E23E-58CE-4B92-BC7A-7C5012A8BC31}\\SupplementaryCultivatedLandAcceptance_1.68_20261029_215801_469681.esriAddInX",
+      "sha256": "D824B2999A04C78EFAD9E681E1798ADC696FC70D9987B32AEFB4DA434054FAC6",
+      "matches_package": true,
+      "installer_restart_required": true
+    },
+    "compiled_dll": {
+      "path": "D:\\work\\.openclaw\\ARCGIS\\land_survey_toolkit\\addin\\AcceptanceAddin\\bin\\Release\\net6.0-windows\\win10-x64\\AcceptanceAddin.dll",
+      "bytes": 428544,
+      "sha256": "F3295BF4E1840DBAC6EA7FCABC5DDD34D1E503E4F864CE41CC62F2807C1ACDBF",
+      "sources": 34,
+      "references": 206,
+      "package_matches": true
+    },
+    "tests": {
+      "pro_ai_bridge": {
+        "passed": 152,
+        "skipped": 7
+      },
+      "addin_contract": {
+        "passed": 24,
+        "skipped": 0
+      },
+      "round_cap_independent_cases": {
+        "passed": 3,
+        "skipped": 0
+      },
+      "roslyn_build": "passed",
+      "package_integrity": {
+        "zip": "passed",
+        "entry_source_mismatches": 0,
+        "dll_hash_match": true
+      },
+      "installation": {
+        "standard_installer": "passed",
+        "installed_hash_matches_package": true
+      }
+    },
+    "independent_review": {
+      "status": "passed",
+      "reviewer": "/root/audit_workflow",
+      "reviewed_files_sha256": {
+        "ModelClient.cs": "DC4EF2EA3B61954C77EA0909ECF15DC9560F50DCD2C5F4CB6BE39812BBE53CED",
+        "MapActions.cs": "BB5B3ABDB885795B42AD654C1CFBCC7ECC8890868526958EB386FA797FCDFC05",
+        "test_core.py": "BBDA5845FAC3188635DB99D998D41D1BECA530CC93BDFE1E30917F38B8E874C9",
+        "test_live.py": "8C1609BE76EAC766171153935D88854CA039BC93863DF8B029EB6ABED3A4BE87",
+        "README.md": "79EA565FDF123977BCF2A4018DD0372B68B0D88883DD0FF2368CC515865BBB2A",
+        "TEST-REPORT.md": "FAED9C4DE1D5A4015BE864BA19C0F147D8A1CD12E16B885D999C9491A8001E82",
+        "Config.daml": "EB1E0BB976966743FA06760B23EC633B8C1D3D5C93CC5BA30BF334F65439F397",
+        "unified-acceptance.md": "5994BD641D7C80A221305D3F14E150C42A0ADD295E6CAEFE8936B1A60C536DD2"
+      },
+      "findings": [
+        "首次审查发现get_status与当前Add-In版本不一致；已修正为1.68并同步实机测试预期及说明，经复核关闭。"
+      ],
+      "conclusion": "100轮上限、续跑、每轮工具数、HTTP重试、取消、超时、SSE释放、历史压缩、消息长度门槛和工具回执均通过语义审核。"
+    },
+    "limits": [
+      "100轮上限通过真实本地HTTP模拟器验证；未使用第三方在线模型服务执行长任务。",
+      "安装器要求重启ArcGIS Pro；安装副本已核对，但本轮尚未重启Pro验证加载后的get_status版本和实际画面。"
+    ]
+  }
+}

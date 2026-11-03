@@ -1,0 +1,104 @@
+{
+  "status": "NEEDS_FIELD_REVIEW",
+  "screening_only": true,
+  "method": "NDVI=(NIR-Red)/(NIR+Red); delta=after-before",
+  "source": {
+    "before": "Earth Search S2C T48QZL L2A",
+    "after": "Earth Search S2B T48QZL L2A"
+  },
+  "date": {
+    "before": "2025-11-25",
+    "after": "2025-12-30"
+  },
+  "band_semantics": {
+    "red_before": "D:\\work\\.openclaw\\ARCGIS\\land_survey_toolkit\\testdata\\real_sentinel2_wuming_probe\\before_B04_clip.tif",
+    "nir_before": "D:\\work\\.openclaw\\ARCGIS\\land_survey_toolkit\\testdata\\real_sentinel2_wuming_probe\\before_B08_clip.tif",
+    "red_after": "D:\\work\\.openclaw\\ARCGIS\\land_survey_toolkit\\testdata\\real_sentinel2_wuming_probe\\after_B04_clip.tif",
+    "nir_after": "D:\\work\\.openclaw\\ARCGIS\\land_survey_toolkit\\testdata\\real_sentinel2_wuming_probe\\after_B08_clip.tif"
+  },
+  "reflectance_transform": {
+    "before_scale": 0.0001,
+    "before_offset": -0.1,
+    "after_scale": 0.0001,
+    "after_offset": -0.1
+  },
+  "cloud_shadow_mask_confirmed_by_operator": false,
+  "cloud_mask": {
+    "applied": true,
+    "method": "Sentinel-2 SCL nearest-neighbor aligned to 10 m red/NIR grid",
+    "invalid_classes": [
+      0,
+      1,
+      3,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "before_source": "D:\\work\\.openclaw\\ARCGIS\\land_survey_toolkit\\testdata\\real_sentinel2_wuming_probe\\before_SCL_clip.tif",
+    "after_source": "D:\\work\\.openclaw\\ARCGIS\\land_survey_toolkit\\testdata\\real_sentinel2_wuming_probe\\after_SCL_clip.tif",
+    "before_excluded_pixels": 0,
+    "after_excluded_pixels": 0,
+    "before_class_counts": {
+      "4": 2558,
+      "5": 1998
+    },
+    "after_class_counts": {
+      "4": 128,
+      "5": 4428
+    }
+  },
+  "grid": {
+    "wkid": 32648,
+    "cell_size_x": 10.0,
+    "cell_size_y": 10.0,
+    "width": 67,
+    "height": 68
+  },
+  "delta_summary": {
+    "valid_pixels": 4556,
+    "mean": -0.10105852037668228,
+    "std": 0.10907338559627533,
+    "minimum": -0.515181303024292,
+    "maximum": 0.34901005029678345
+  },
+  "unit_summary": [
+    {
+      "unit_id": "999999202600001E0001",
+      "valid_pixels": 128,
+      "unit_pixels": 128,
+      "valid_coverage": 1.0,
+      "mean_ndvi_before": 0.614688,
+      "mean_ndvi_after": 0.500839,
+      "mean_ndvi_delta": -0.113848,
+      "std_ndvi_delta": 0.081275,
+      "positive_delta_pixels": 15,
+      "negative_delta_pixels": 113,
+      "scl_excluded_pixels_before": 0,
+      "scl_excluded_pixels_after": 0
+    },
+    {
+      "unit_id": "999999202600001E0002",
+      "valid_pixels": 128,
+      "unit_pixels": 128,
+      "valid_coverage": 1.0,
+      "mean_ndvi_before": 0.470953,
+      "mean_ndvi_after": 0.433017,
+      "mean_ndvi_delta": -0.037936,
+      "std_ndvi_delta": 0.105549,
+      "positive_delta_pixels": 60,
+      "negative_delta_pixels": 68,
+      "scl_excluded_pixels_before": 0,
+      "scl_excluded_pixels_after": 0
+    }
+  ],
+  "outputs": {
+    "before": "D:\\work\\.openclaw\\ARCGIS\\land_survey_toolkit\\temp\\real_data_probe_20261020\\plugin_run_scl4\\RS_NDVI_20251125_20251230_6abecb6f_before.tif",
+    "after": "D:\\work\\.openclaw\\ARCGIS\\land_survey_toolkit\\temp\\real_data_probe_20261020\\plugin_run_scl4\\RS_NDVI_20251125_20251230_6abecb6f_after.tif",
+    "delta": "D:\\work\\.openclaw\\ARCGIS\\land_survey_toolkit\\temp\\real_data_probe_20261020\\plugin_run_scl4\\RS_NDVI_20251125_20251230_6abecb6f_delta.tif",
+    "csv": "D:\\work\\.openclaw\\ARCGIS\\land_survey_toolkit\\temp\\real_data_probe_20261020\\plugin_run_scl4\\RS_NDVI_20251125_20251230_6abecb6f_by_unit.csv",
+    "json": "D:\\work\\.openclaw\\ARCGIS\\land_survey_toolkit\\temp\\real_data_probe_20261020\\plugin_run_scl4\\RS_NDVI_20251125_20251230_6abecb6f_evidence.json"
+  },
+  "review_note": "NDVI变化受季节、物候、云/阴影、作物类型、土壤背景、影像预处理和分辨率影响；本结果仅为线索。应核实影像元数据/云掩膜/大气校正，并结合RTK、现场踏勘和样品记录；不得据此自动认定补充耕地变化、质量等级或验收结论。"
+}

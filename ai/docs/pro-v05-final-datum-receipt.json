@@ -1,0 +1,510 @@
+[
+  {
+    "name": "activate_map",
+    "arguments": {
+      "map": "Bridge Map"
+    },
+    "response": {
+      "ok": true,
+      "result": {
+        "activated": true,
+        "map": "Bridge Map",
+        "map_uri": "CIMPATH=map/map.json"
+      }
+    }
+  },
+  {
+    "name": "list_transformations",
+    "arguments": {
+      "input": "D:\\work\\.openclaw\\temp\\pro-ai-v05-final-live-01\\smoke.gdb\\datum_wgs",
+      "target_wkid": 4269
+    },
+    "response": {
+      "ok": true,
+      "result": {
+        "target_wkid": 4269,
+        "target": "GCS_North_American_1983",
+        "transformation_required": true,
+        "transformations": [
+          "WGS_1984_(ITRF00)_To_NAD_1983",
+          "~NAD_1983_To_WGS_1984_5",
+          "~NAD_1983_To_WGS_1984_1",
+          "~NAD_1983_To_WGS_1984_4",
+          "~NAD_1983_To_WGS_1984_3",
+          "~NAD_1983_To_WGS_1984_east_Texas_38",
+          "~NAD_1983_To_WGS_1984_west_Texas_39",
+          "~NAD_1983_To_WGS_1984_Florida_18",
+          "~NAD_1983_To_WGS_1984_eastern_ID_MT_19",
+          "~NAD_1983_To_WGS_1984_2"
+        ],
+        "note": "仅列出候选单步水平变换，须结合数据所在地选择；不处理垂直变换。"
+      }
+    }
+  },
+  {
+    "name": "project_features",
+    "arguments": {
+      "input": "D:\\work\\.openclaw\\temp\\pro-ai-v05-final-live-01\\smoke.gdb\\datum_wgs",
+      "output": "D:\\work\\.openclaw\\temp\\pro-ai-v05-final-live-01\\smoke.gdb\\datum_nad_result",
+      "target_wkid": 4269,
+      "transformation": "~NAD_1983_To_WGS_1984_5",
+      "confirm": true
+    },
+    "response": {
+      "ok": true,
+      "result": {
+        "job_id": "4db311a4231a4e668ce63640447dae44",
+        "status": "queued",
+        "tool": "management.Project"
+      }
+    }
+  },
+  {
+    "name": "get_job",
+    "arguments": {
+      "job_id": "4db311a4231a4e668ce63640447dae44"
+    },
+    "response": {
+      "ok": true,
+      "result": {
+        "job_id": "4db311a4231a4e668ce63640447dae44",
+        "project": "D:/work/.openclaw/temp/pro-ai-v05-final-live-01/BridgeSmoke.aprx",
+        "tool": "management.Project",
+        "status": "running",
+        "value": "",
+        "messages": "",
+        "cancel_requested": false,
+        "created_at": "2026-10-26T04:58:33.3490589+00:00",
+        "started_at": "2026-10-26T04:58:33.3491198+00:00",
+        "finished_at": null,
+        "elapsed_ms": 34,
+        "output_path": null,
+        "can_load_output": false
+      }
+    }
+  },
+  {
+    "name": "get_job",
+    "arguments": {
+      "job_id": "4db311a4231a4e668ce63640447dae44"
+    },
+    "response": {
+      "ok": true,
+      "result": {
+        "job_id": "4db311a4231a4e668ce63640447dae44",
+        "project": "D:/work/.openclaw/temp/pro-ai-v05-final-live-01/BridgeSmoke.aprx",
+        "tool": "management.Project",
+        "status": "running",
+        "value": "",
+        "messages": "",
+        "cancel_requested": false,
+        "created_at": "2026-10-26T04:58:33.3490589+00:00",
+        "started_at": "2026-10-26T04:58:33.3491198+00:00",
+        "finished_at": null,
+        "elapsed_ms": 552,
+        "output_path": null,
+        "can_load_output": false
+      }
+    }
+  },
+  {
+    "name": "get_job",
+    "arguments": {
+      "job_id": "4db311a4231a4e668ce63640447dae44"
+    },
+    "response": {
+      "ok": true,
+      "result": {
+        "job_id": "4db311a4231a4e668ce63640447dae44",
+        "project": "D:/work/.openclaw/temp/pro-ai-v05-final-live-01/BridgeSmoke.aprx",
+        "tool": "management.Project",
+        "status": "running",
+        "value": "",
+        "messages": "",
+        "cancel_requested": false,
+        "created_at": "2026-10-26T04:58:33.3490589+00:00",
+        "started_at": "2026-10-26T04:58:33.3491198+00:00",
+        "finished_at": null,
+        "elapsed_ms": 1069,
+        "output_path": null,
+        "can_load_output": false
+      }
+    }
+  },
+  {
+    "name": "get_job",
+    "arguments": {
+      "job_id": "4db311a4231a4e668ce63640447dae44"
+    },
+    "response": {
+      "ok": true,
+      "result": {
+        "job_id": "4db311a4231a4e668ce63640447dae44",
+        "project": "D:/work/.openclaw/temp/pro-ai-v05-final-live-01/BridgeSmoke.aprx",
+        "tool": "management.Project",
+        "status": "running",
+        "value": "",
+        "messages": "",
+        "cancel_requested": false,
+        "created_at": "2026-10-26T04:58:33.3490589+00:00",
+        "started_at": "2026-10-26T04:58:33.3491198+00:00",
+        "finished_at": null,
+        "elapsed_ms": 1587,
+        "output_path": null,
+        "can_load_output": false
+      }
+    }
+  },
+  {
+    "name": "get_job",
+    "arguments": {
+      "job_id": "4db311a4231a4e668ce63640447dae44"
+    },
+    "response": {
+      "ok": true,
+      "result": {
+        "job_id": "4db311a4231a4e668ce63640447dae44",
+        "project": "D:/work/.openclaw/temp/pro-ai-v05-final-live-01/BridgeSmoke.aprx",
+        "tool": "management.Project",
+        "status": "running",
+        "value": "",
+        "messages": "",
+        "cancel_requested": false,
+        "created_at": "2026-10-26T04:58:33.3490589+00:00",
+        "started_at": "2026-10-26T04:58:33.3491198+00:00",
+        "finished_at": null,
+        "elapsed_ms": 2104,
+        "output_path": null,
+        "can_load_output": false
+      }
+    }
+  },
+  {
+    "name": "get_job",
+    "arguments": {
+      "job_id": "4db311a4231a4e668ce63640447dae44"
+    },
+    "response": {
+      "ok": true,
+      "result": {
+        "job_id": "4db311a4231a4e668ce63640447dae44",
+        "project": "D:/work/.openclaw/temp/pro-ai-v05-final-live-01/BridgeSmoke.aprx",
+        "tool": "management.Project",
+        "status": "running",
+        "value": "",
+        "messages": "",
+        "cancel_requested": false,
+        "created_at": "2026-10-26T04:58:33.3490589+00:00",
+        "started_at": "2026-10-26T04:58:33.3491198+00:00",
+        "finished_at": null,
+        "elapsed_ms": 2622,
+        "output_path": null,
+        "can_load_output": false
+      }
+    }
+  },
+  {
+    "name": "get_job",
+    "arguments": {
+      "job_id": "4db311a4231a4e668ce63640447dae44"
+    },
+    "response": {
+      "ok": true,
+      "result": {
+        "job_id": "4db311a4231a4e668ce63640447dae44",
+        "project": "D:/work/.openclaw/temp/pro-ai-v05-final-live-01/BridgeSmoke.aprx",
+        "tool": "management.Project",
+        "status": "running",
+        "value": "",
+        "messages": "",
+        "cancel_requested": false,
+        "created_at": "2026-10-26T04:58:33.3490589+00:00",
+        "started_at": "2026-10-26T04:58:33.3491198+00:00",
+        "finished_at": null,
+        "elapsed_ms": 3140,
+        "output_path": null,
+        "can_load_output": false
+      }
+    }
+  },
+  {
+    "name": "get_job",
+    "arguments": {
+      "job_id": "4db311a4231a4e668ce63640447dae44"
+    },
+    "response": {
+      "ok": true,
+      "result": {
+        "job_id": "4db311a4231a4e668ce63640447dae44",
+        "project": "D:/work/.openclaw/temp/pro-ai-v05-final-live-01/BridgeSmoke.aprx",
+        "tool": "management.Project",
+        "status": "running",
+        "value": "",
+        "messages": "",
+        "cancel_requested": false,
+        "created_at": "2026-10-26T04:58:33.3490589+00:00",
+        "started_at": "2026-10-26T04:58:33.3491198+00:00",
+        "finished_at": null,
+        "elapsed_ms": 3658,
+        "output_path": null,
+        "can_load_output": false
+      }
+    }
+  },
+  {
+    "name": "get_job",
+    "arguments": {
+      "job_id": "4db311a4231a4e668ce63640447dae44"
+    },
+    "response": {
+      "ok": true,
+      "result": {
+        "job_id": "4db311a4231a4e668ce63640447dae44",
+        "project": "D:/work/.openclaw/temp/pro-ai-v05-final-live-01/BridgeSmoke.aprx",
+        "tool": "management.Project",
+        "status": "succeeded",
+        "value": "D:\\work\\.openclaw\\temp\\pro-ai-v05-final-live-01\\smoke.gdb\\datum_nad_result",
+        "messages": "开始时间: 2026年10月26日 12:58:35; 运行 成功，结束时间： 2026年10月26日 12:58:37 (历时: 2.17 秒)",
+        "cancel_requested": false,
+        "created_at": "2026-10-26T04:58:33.3490589+00:00",
+        "started_at": "2026-10-26T04:58:33.3491198+00:00",
+        "finished_at": "2026-10-26T04:58:37.2248207+00:00",
+        "elapsed_ms": 3875,
+        "output_path": "D:\\work\\.openclaw\\temp\\pro-ai-v05-final-live-01\\smoke.gdb\\datum_nad_result",
+        "can_load_output": true
+      }
+    }
+  },
+  {
+    "name": "load_job_output",
+    "arguments": {
+      "job_id": "4db311a4231a4e668ce63640447dae44",
+      "confirm": true
+    },
+    "response": {
+      "ok": true,
+      "result": {
+        "loaded": true,
+        "already_loaded": false,
+        "job_id": "4db311a4231a4e668ce63640447dae44",
+        "layer": "CIMPATH=bridge_map/datum_nad_result.json",
+        "name": "datum_nad_result",
+        "path": "D:\\work\\.openclaw\\temp\\pro-ai-v05-final-live-01\\smoke.gdb\\datum_nad_result",
+        "map_uri": "CIMPATH=map/map.json"
+      }
+    }
+  },
+  {
+    "name": "get_feature_count",
+    "arguments": {
+      "layer": "CIMPATH=bridge_map/datum_nad_result.json"
+    },
+    "response": {
+      "ok": true,
+      "result": {
+        "count": 1
+      }
+    }
+  },
+  {
+    "name": "remove_layer",
+    "arguments": {
+      "layer": "CIMPATH=bridge_map/datum_nad_result.json",
+      "confirm": true
+    },
+    "response": {
+      "ok": true,
+      "result": {
+        "removed": true,
+        "source_deleted": false
+      }
+    }
+  },
+  {
+    "name": "list_transformations",
+    "arguments": {
+      "input": "D:\\work\\.openclaw\\temp\\pro-ai-v05-final-live-01\\smoke.gdb\\datum_nad_result",
+      "target_wkid": 4326
+    },
+    "response": {
+      "ok": true,
+      "result": {
+        "target_wkid": 4326,
+        "target": "GCS_WGS_1984",
+        "transformation_required": true,
+        "transformations": [
+          "~WGS_1984_(ITRF00)_To_NAD_1983",
+          "NAD_1983_To_WGS_1984_5",
+          "NAD_1983_To_WGS_1984_1",
+          "NAD_1983_To_WGS_1984_4",
+          "NAD_1983_To_WGS_1984_3",
+          "NAD_1983_To_WGS_1984_east_Texas_38",
+          "NAD_1983_To_WGS_1984_west_Texas_39",
+          "NAD_1983_To_WGS_1984_Florida_18",
+          "NAD_1983_To_WGS_1984_eastern_ID_MT_19",
+          "NAD_1983_To_WGS_1984_2"
+        ],
+        "note": "仅列出候选单步水平变换，须结合数据所在地选择；不处理垂直变换。"
+      }
+    }
+  },
+  {
+    "name": "project_features",
+    "arguments": {
+      "input": "D:\\work\\.openclaw\\temp\\pro-ai-v05-final-live-01\\smoke.gdb\\datum_nad_result",
+      "output": "D:\\work\\.openclaw\\temp\\pro-ai-v05-final-live-01\\smoke.gdb\\datum_wgs_result",
+      "target_wkid": 4326,
+      "transformation": "NAD_1983_To_WGS_1984_5",
+      "confirm": true
+    },
+    "response": {
+      "ok": true,
+      "result": {
+        "job_id": "fb5c8de8ace04858a683dc19f1efbc59",
+        "status": "queued",
+        "tool": "management.Project"
+      }
+    }
+  },
+  {
+    "name": "get_job",
+    "arguments": {
+      "job_id": "fb5c8de8ace04858a683dc19f1efbc59"
+    },
+    "response": {
+      "ok": true,
+      "result": {
+        "job_id": "fb5c8de8ace04858a683dc19f1efbc59",
+        "project": "D:/work/.openclaw/temp/pro-ai-v05-final-live-01/BridgeSmoke.aprx",
+        "tool": "management.Project",
+        "status": "running",
+        "value": "",
+        "messages": "",
+        "cancel_requested": false,
+        "created_at": "2026-10-26T04:58:39.7452074+00:00",
+        "started_at": "2026-10-26T04:58:39.7452254+00:00",
+        "finished_at": null,
+        "elapsed_ms": 6,
+        "output_path": null,
+        "can_load_output": false
+      }
+    }
+  },
+  {
+    "name": "get_job",
+    "arguments": {
+      "job_id": "fb5c8de8ace04858a683dc19f1efbc59"
+    },
+    "response": {
+      "ok": true,
+      "result": {
+        "job_id": "fb5c8de8ace04858a683dc19f1efbc59",
+        "project": "D:/work/.openclaw/temp/pro-ai-v05-final-live-01/BridgeSmoke.aprx",
+        "tool": "management.Project",
+        "status": "running",
+        "value": "",
+        "messages": "",
+        "cancel_requested": false,
+        "created_at": "2026-10-26T04:58:39.7452074+00:00",
+        "started_at": "2026-10-26T04:58:39.7452254+00:00",
+        "finished_at": null,
+        "elapsed_ms": 523,
+        "output_path": null,
+        "can_load_output": false
+      }
+    }
+  },
+  {
+    "name": "get_job",
+    "arguments": {
+      "job_id": "fb5c8de8ace04858a683dc19f1efbc59"
+    },
+    "response": {
+      "ok": true,
+      "result": {
+        "job_id": "fb5c8de8ace04858a683dc19f1efbc59",
+        "project": "D:/work/.openclaw/temp/pro-ai-v05-final-live-01/BridgeSmoke.aprx",
+        "tool": "management.Project",
+        "status": "running",
+        "value": "",
+        "messages": "",
+        "cancel_requested": false,
+        "created_at": "2026-10-26T04:58:39.7452074+00:00",
+        "started_at": "2026-10-26T04:58:39.7452254+00:00",
+        "finished_at": null,
+        "elapsed_ms": 1040,
+        "output_path": null,
+        "can_load_output": false
+      }
+    }
+  },
+  {
+    "name": "get_job",
+    "arguments": {
+      "job_id": "fb5c8de8ace04858a683dc19f1efbc59"
+    },
+    "response": {
+      "ok": true,
+      "result": {
+        "job_id": "fb5c8de8ace04858a683dc19f1efbc59",
+        "project": "D:/work/.openclaw/temp/pro-ai-v05-final-live-01/BridgeSmoke.aprx",
+        "tool": "management.Project",
+        "status": "succeeded",
+        "value": "D:\\work\\.openclaw\\temp\\pro-ai-v05-final-live-01\\smoke.gdb\\datum_wgs_result",
+        "messages": "开始时间: 2026年10月26日 12:58:40; 运行 成功，结束时间： 2026年10月26日 12:58:40 (历时: 0.77 秒)",
+        "cancel_requested": false,
+        "created_at": "2026-10-26T04:58:39.7452074+00:00",
+        "started_at": "2026-10-26T04:58:39.7452254+00:00",
+        "finished_at": "2026-10-26T04:58:40.9139304+00:00",
+        "elapsed_ms": 1168,
+        "output_path": "D:\\work\\.openclaw\\temp\\pro-ai-v05-final-live-01\\smoke.gdb\\datum_wgs_result",
+        "can_load_output": true
+      }
+    }
+  },
+  {
+    "name": "load_job_output",
+    "arguments": {
+      "job_id": "fb5c8de8ace04858a683dc19f1efbc59",
+      "confirm": true
+    },
+    "response": {
+      "ok": true,
+      "result": {
+        "loaded": true,
+        "already_loaded": false,
+        "job_id": "fb5c8de8ace04858a683dc19f1efbc59",
+        "layer": "CIMPATH=bridge_map/datum_wgs_result.json",
+        "name": "datum_wgs_result",
+        "path": "D:\\work\\.openclaw\\temp\\pro-ai-v05-final-live-01\\smoke.gdb\\datum_wgs_result",
+        "map_uri": "CIMPATH=map/map.json"
+      }
+    }
+  },
+  {
+    "name": "get_feature_count",
+    "arguments": {
+      "layer": "CIMPATH=bridge_map/datum_wgs_result.json"
+    },
+    "response": {
+      "ok": true,
+      "result": {
+        "count": 1
+      }
+    }
+  },
+  {
+    "name": "remove_layer",
+    "arguments": {
+      "layer": "CIMPATH=bridge_map/datum_wgs_result.json",
+      "confirm": true
+    },
+    "response": {
+      "ok": true,
+      "result": {
+        "removed": true,
+        "source_deleted": false
+      }
+    }
+  }
+]

@@ -1,0 +1,17 @@
+out/
+__pycache__/
+*.pyc
+toolboxes/*.*.pyt.xml
+addin/AcceptanceAddin/bin/
+addin/AcceptanceAddin/obj/
+testdata/public_lipu_case17/
+
+# Generated ArcGIS runs, recoverable archives, and local release artifacts
+/temp/
+**/_archive/
+/addin/dist/
+# 通用构建、IDE 与测试产物
+dist/
+.vs/
+*.esriAddInX
+.pytest_cache/

@@ -1,0 +1,15 @@
+{
+  "ok": true,
+  "proposal": "PRO-AI-BRIDGE-V052",
+  "module": "pro-ai-bridge",
+  "n_changed": 18,
+  "allowed": [
+    "ARCGIS/pro_ai_bridge/*",
+    "config/proposal_scopes.json"
+  ],
+  "violations": [],
+  "attribution": "content_delta_only_writer_unknown",
+  "raw_receipt": "temp/pro-ai-v052-final-scope.json",
+  "baseline": "temp/pro-ai-v052-baseline.json",
+  "note": "沿用写前内容基线复核最终文档及收据；省略无关共享路径。"
+}

@@ -1,0 +1,23 @@
+{
+  "version": "0.6.0",
+  "final_package_installed": true,
+  "addin_sha256": "ee446433194c821cc1a6e0e2759d9765e9840be6a324b118236afc11f35045e4",
+  "loaded_dll_sha256": "9cfdca8a0b12380344adaefb22268205d5863e2ac7e5862d1973f7a2396613b1",
+  "loaded_dll_matches_build": true,
+  "non_live_tests_passed": 99,
+  "live_tests_passed": 5,
+  "live_seconds": 41.95,
+  "native_tools": 36,
+  "mcp_tools": 38,
+  "inspection_cases": [
+    "healthy_polygons",
+    "duplicate_ids",
+    "required_null",
+    "issue_oid_selection_and_zoom",
+    "selected_scope_rejected",
+    "scan_limit_rejected",
+    "unknown_field_rejected"
+  ],
+  "ui_physical_input_verified": false,
+  "dsh_model_rerun": false
+}

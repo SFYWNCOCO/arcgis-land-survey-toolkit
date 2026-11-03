@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArcGIS defaultAssembly="AcceptanceAddin.dll" defaultNamespace="AcceptanceAddin" xmlns="http://schemas.esri.com/DADF/Registry">
+  <AddInInfo id="{83A6E23E-58CE-4B92-BC7A-7C5012A8BC31}" version="1.82" desktopVersion="3.1">
+    <Name>补充耕地验收工作台</Name>
+    <Description>统一AI助手、采样设计、地块处理、底图服务、质检制图与MCP连接。</Description>
+    <Author>Land Quality Acceptance Toolkit</Author>
+    <Company>Local</Company>
+    <Date>2026-11-03</Date>
+  </AddInInfo>
+  <modules>
+    <insertModule id="AcceptanceAddin_Module" className="Module1" autoLoad="true" caption="补充耕地验收助手">
+      <tabs>
+        <tab id="AcceptanceAddin_Tab" caption="补充耕地验收" keytip="Z0">
+          <group refID="AcceptanceAddin_WorkbenchGroup" />
+          <group refID="AcceptanceAddin_DataGroup" />
+          <group refID="AcceptanceAddin_MoreGroup" />
+        </tab>
+      </tabs>
+      <groups>
+        <group id="AcceptanceAddin_WorkbenchGroup" caption="验收工作台" appearsOnAddInTab="false">
+          <button refID="AcceptanceAddin_WizardPaneButton" size="large" />
+          <button refID="AcceptanceAddin_SamplingWorkspaceButton" size="large" />
+          <button refID="AcceptanceAddin_ParcelLocate" size="large" />
+        </group>
+        <group id="AcceptanceAddin_DataGroup" caption="数据与检查" appearsOnAddInTab="false">
+          <button refID="AcceptanceAddin_ProjectButton" size="large" />
+          <button refID="AcceptanceAddin_VectorButton" size="large" />
+          <button refID="AcceptanceAddin_VectorBatchButton" size="large" />
+          <button refID="AcceptanceAddin_DataButton" size="large" />
+          <button refID="AcceptanceAddin_RTKButton" size="large" />
+          <button refID="AcceptanceAddin_QAButton" size="large" />
+          <button refID="AcceptanceAddin_DeliveryButton" size="large" />
+        </group>
+        <group id="AcceptanceAddin_MoreGroup" caption="更多工具" appearsOnAddInTab="false">
+          <menu refID="AcceptanceAddin_MoreMenu" size="large" />
+        </group>
+      </groups>
+      <menus>
+        <menu id="AcceptanceAddin_MoreMenu" caption="更多工具" extendedCaption="地块质检、整理、制图、POI、遥感与采样工具">
+          <button refID="AcceptanceAddin_ParcelAudit" />
+          <button refID="AcceptanceAddin_ParcelPrepare" />
+          <button refID="AcceptanceAddin_ParcelMaps" />
+          <button refID="AcceptanceAddin_AmapPoiCredential" />
+          <button refID="AcceptanceAddin_AmapPoiSearch" />
+          <button refID="AcceptanceAddin_RemoteSensingButton" />
+          <button refID="AcceptanceAddin_SamplingButton" />
+          <button refID="AcceptanceAddin_BulkDensityButton" />
+          <button refID="AcceptanceAddin_DemTerrainButton" />
+          <button refID="AcceptanceAddin_SamplingCoordinatesButton" />
+          <button refID="AcceptanceAddin_ImageryAccuracyButton" />
+          <button refID="AcceptanceAddin_BulkDensityQAButton" />
+        </menu>
+      </menus>
+      <controls>
+        <tool id="AcceptanceAddin_PointAdjustment" caption="吸附调整设计点" className="PointAdjustmentTool" loadOnClick="true" />
+        <tool id="AcceptanceAddin_ParcelSplit" caption="画线分割图斑" className="ParcelSplitTool" loadOnClick="true" />
+        <button id="AcceptanceAddin_WizardPaneButton" caption="打开工作台" className="WizardPaneButton" keytip="W" loadOnClick="true" />
+        <button id="AcceptanceAddin_SamplingWorkspaceButton" caption="一键出图" className="SamplingWorkspaceButton" keytip="I" loadOnClick="true" />
+        <button id="AcceptanceAddin_ParcelLocate" caption="快速定位地块" className="ParcelLocateButton" keytip="F" loadOnClick="true" />
+        <button id="AcceptanceAddin_ParcelAudit" caption="地块一键质检" className="ParcelAuditButton" keytip="T" loadOnClick="true" />
+        <button id="AcceptanceAddin_ParcelPrepare" caption="地块数据整理" className="ParcelPrepareButton" keytip="J" loadOnClick="true" />
+        <button id="AcceptanceAddin_ParcelMaps" caption="地块批量制图" className="ParcelMapsButton" keytip="P" loadOnClick="true" />
+        <button id="AcceptanceAddin_AmapPoiCredential" caption="配置高德Key" className="AmapPoiCredentialButton" keytip="G" loadOnClick="true" />
+        <button id="AcceptanceAddin_AmapPoiSearch" caption="POI参考检索" className="AmapPoiSearchButton" keytip="O" loadOnClick="true" />
+        <button id="AcceptanceAddin_ProjectButton" caption="新建项目与数据库" className="ProjectSetupButton" keytip="N" loadOnClick="true" />
+        <button id="AcceptanceAddin_VectorButton" caption="矢量/GeoJSON接入" className="VectorImportButton" keytip="V" loadOnClick="true" />
+        <button id="AcceptanceAddin_VectorBatchButton" caption="矢量批量接入" className="VectorBatchImportButton" keytip="E" loadOnClick="true" />
+        <button id="AcceptanceAddin_DataButton" caption="CAD 接入" className="DataIntakeButton" keytip="C" loadOnClick="true" />
+        <button id="AcceptanceAddin_RTKButton" caption="RTK CSV 接入" className="RTKImportButton" keytip="R" loadOnClick="true" />
+        <button id="AcceptanceAddin_RemoteSensingButton" caption="遥感时相筛查" className="RemoteSensingButton" keytip="S" loadOnClick="true" />
+        <button id="AcceptanceAddin_SamplingButton" caption="混合样点设计" className="SamplingDesignButton" keytip="M" loadOnClick="true" />
+        <button id="AcceptanceAddin_BulkDensityButton" caption="容重样点设计" className="BulkDensityDesignButton" keytip="B" loadOnClick="true" />
+        <button id="AcceptanceAddin_DemTerrainButton" caption="DEM坡度与海拔" className="DemTerrainButton" keytip="H" loadOnClick="true" />
+        <button id="AcceptanceAddin_SamplingCoordinatesButton" caption="点位经纬度表" className="SamplingCoordinatesButton" keytip="L" loadOnClick="true" />
+        <button id="AcceptanceAddin_ImageryAccuracyButton" caption="影像精度检核" className="ImageryAccuracyButton" keytip="Y" loadOnClick="true" />
+        <button id="AcceptanceAddin_QAButton" caption="数据库质检" className="QualityCheckButton" keytip="Q" loadOnClick="true" />
+        <button id="AcceptanceAddin_BulkDensityQAButton" caption="容重样点质检" className="BulkDensityQAButton" keytip="A" loadOnClick="true" />
+        <button id="AcceptanceAddin_DeliveryButton" caption="汇交检查" className="DeliveryButton" keytip="D" loadOnClick="true" />
+      </controls>
+      <dockPanes>
+        <dockPane id="AcceptanceAddin_Workspace" caption="补充耕地验收工作台" className="AcceptanceWorkspacePane"
+                  dock="group" dockWith="esri_core_projectDockPane" isVisible="false" width="460" height="900" />
+      </dockPanes>
+    </insertModule>
+  </modules>
+</ArcGIS>

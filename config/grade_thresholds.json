@@ -1,0 +1,157 @@
+{
+  "source": {
+    "title": "全国九大农区及省级耕地质量监测指标分级标准（试行）",
+    "doc_no": "耕地监测函〔2019〕30号",
+    "issued": "2019-03-22",
+    "issuer": "农业农村部耕地质量监测保护中心",
+    "pages": 51,
+    "scope_claim": "覆盖东北区、内蒙古及长城沿线区、黄淮海区、黄土高原区、长江中下游区、西南区、华南区、甘新区、青藏区九大农区及31个省级行政区",
+    "verified": false,
+    "verify_note": "2026-10-23 未取得原文全文。regions 中的数值仅来自公开文章举例，不代表原文；正式成果使用前必须按原文抄表，并把复核人/日期/页码写回本文件。",
+    "access_attempts": [
+      "web 检索（多组关键词、site:gov.cn）：无官方全文；仅命中付费转载页 guoturen.com/wenku-17864.html（VIP.2，51 页，正文表格不可读）",
+      "doc88「省区、市耕地质量监测指标分级标准」：无文字层，仅标题可读",
+      "广西农业农村厅 桂农厅办发〔2024〕34号（2024年广西耕地质量监测工作实施方案）：正文已抓取，无附件链接、无分级表",
+      "福建省农业农村厅公开 PDF：取得的是福建省级表（非广西、非大区表），已单独存为 grade_thresholds_reference.json 供结构与方向参照"
+    ],
+    "usage_boundary": "本标准用于耕地质量【监测】指标水平分级（1—5级）。补充耕地质量【验收】的耕地质量等级走三普/GB-T 33469 权重×隶属度→综合指数→10 等级，两套口径不可互相替代，分级值不得直接当质量等级或代入验收评价。"
+  },
+  "schema": {
+    "direction": {
+      "asc": "正向：值越大越好。bounds 为 4 个升序界限 b1<b2<b3<b4，value>=b4→1级、>=b3→2级、>=b2→3级、>=b1→4级、否则5级",
+      "desc": "负向：值越小越好。bounds 为 4 个升序界限 m1<m2<m3<m4，value<=m1→1级、<=m2→2级、<=m3→3级、<=m4→4级、否则5级",
+      "range": "区间：适中最好。ranges 为 [[下限,上限,级], ...] 覆盖带；outside_grade 为带外等级"
+    },
+    "verified": "false 表示阈值未经原文核对，脚本会照算但会在结果里标 UNVERIFIED"
+  },
+  "regions": {
+    "西南区": {
+      "note": "广西区内对应黔桂高原山地林农牧区（西南区）",
+      "indicators": {
+        "OM": {
+          "name": "有机质",
+          "unit": "g/kg",
+          "direction": "asc",
+          "bounds": [35, 30, 25, 20],
+          "verified": false,
+          "evidence": "公开文章举例：有机质>35为1级、10—15为4级。两条不足以反推 4 个界限，本组 bounds 含推断成分，必须核对原文。"
+        },
+        "pH": {
+          "name": "酸碱度",
+          "unit": "",
+          "direction": "range",
+          "ranges": [[6.0, 7.0, 1]],
+          "outside_grade": 5,
+          "verified": false,
+          "evidence": "公开文章举例：pH 6.0—7.0为1级，<4.5或>8.5为5级。2—5级区间原文未给出。"
+        },
+        "EXC_CA": {
+          "name": "交换性钙",
+          "unit": "mg/kg",
+          "direction": "asc",
+          "bounds": [1500, 1000, 500, 200],
+          "verified": false,
+          "evidence": "公开文章举例：西南区 200/500/1000/1500，华南区 50/200/500/1000。仅四点界限，方向按正向理解。"
+        },
+        "SALINITY": {
+          "name": "盐渍化程度",
+          "unit": "",
+          "direction": "desc",
+          "bounds": [1, 3, 6],
+          "verified": false,
+          "evidence": "公开文章举例：≤1为1级、>6为5级；中间界限与级数原文未给出（bounds 只有3个，不足4个）。"
+        }
+      }
+    },
+    "华南区": {
+      "note": "广西区内对应粤西桂南农林区（华南区）",
+      "indicators": {
+        "OM": {
+          "name": "有机质",
+          "unit": "g/kg",
+          "direction": "asc",
+          "bounds": [35, 30, 25, 20],
+          "verified": false,
+          "evidence": "同西南区，待原文核定"
+        },
+        "pH": {
+          "name": "酸碱度",
+          "unit": "",
+          "direction": "range",
+          "ranges": [[6.0, 7.0, 1]],
+          "outside_grade": 5,
+          "verified": false,
+          "evidence": "同西南区，待原文核定"
+        },
+        "EXC_CA": {
+          "name": "交换性钙",
+          "unit": "mg/kg",
+          "direction": "asc",
+          "bounds": [1000, 500, 200, 50],
+          "verified": false,
+          "evidence": "公开文章举例：华南区 50/200/500/1000"
+        },
+        "SALINITY": {
+          "name": "盐渍化程度",
+          "unit": "",
+          "direction": "desc",
+          "bounds": [1, 3, 6],
+          "verified": false,
+          "evidence": "同西南区，待原文核定"
+        }
+      }
+    }
+  },
+  "indicator_catalog": {
+    "note": "26 项指标的名称、单位、方向。方向与单位取自官方文件（福建省农业农村厅《福建省耕地质量监测指标分级标准》原表，见 grade_thresholds_reference.json），属指标固有属性，可跨省沿用；阈值不可跨省沿用，广西数值仍缺。",
+    "direction_source": "福建省耕地质量监测指标分级标准（官方 PDF，印刷页28）",
+    "direction_verified": true,
+    "threshold_status": "广西（西南区/华南区/长江中下游区）阈值未取得，26 项全部待补",
+    "items": {
+      "PLTH": {"name": "耕层厚度", "unit": "cm", "direction": "asc"},
+      "BD": {"name": "土壤容重", "unit": "g/cm3", "direction": "range"},
+      "COMPACT": {"name": "紧实度", "unit": "MPa", "direction": "desc"},
+      "WSA": {"name": "水稳性大团聚体", "unit": "%", "direction": "asc"},
+      "CEC": {"name": "阳离子交换量", "unit": "cmol/kg", "direction": "asc"},
+      "OM": {"name": "有机质", "unit": "g/kg", "direction": "asc"},
+      "pH": {"name": "酸碱度", "unit": "", "direction": "range"},
+      "TN": {"name": "全氮", "unit": "g/kg", "direction": "asc"},
+      "AP": {"name": "有效磷", "unit": "mg/kg", "direction": "asc"},
+      "AK": {"name": "速效钾", "unit": "mg/kg", "direction": "asc"},
+      "SK": {"name": "缓效钾", "unit": "mg/kg", "direction": "asc"},
+      "EXC_CA": {"name": "交换性钙", "unit": "mg/kg", "direction": "asc"},
+      "EXC_MG": {"name": "交换性镁", "unit": "mg/kg", "direction": "asc"},
+      "S": {"name": "有效硫", "unit": "mg/kg", "direction": "asc"},
+      "FE": {"name": "有效铁", "unit": "mg/kg", "direction": "asc"},
+      "MN": {"name": "有效锰", "unit": "mg/kg", "direction": "asc"},
+      "CU": {"name": "有效铜", "unit": "mg/kg", "direction": "asc"},
+      "ZN": {"name": "有效锌", "unit": "mg/kg", "direction": "asc"},
+      "B": {"name": "有效硼", "unit": "mg/kg", "direction": "asc"},
+      "MO": {"name": "有效钼", "unit": "mg/kg", "direction": "asc"},
+      "SI": {"name": "有效硅", "unit": "mg/kg", "direction": "asc"},
+      "TP": {"name": "全磷", "unit": "g/kg", "direction": "asc"},
+      "TK": {"name": "全钾", "unit": "g/kg", "direction": "asc"},
+      "MBC": {"name": "微生物生物量碳", "unit": "mg/kg", "direction": "asc"},
+      "SALINITY": {"name": "盐渍化程度", "unit": "g/kg", "direction": "desc"},
+      "FILM": {"name": "农膜残留量", "unit": "kg/亩", "direction": "desc"}
+    },
+    "not_graded": {
+      "HEAVY_METALS": "土壤铬镉铅砷汞按 GB 15618-2018 筛选值/管制值判定，不做 1—5 级（官方原表即如此注明）"
+    }
+  },
+  "reference_tables": {
+    "福建省": {
+      "file": "grade_thresholds_reference.json",
+      "verified": true,
+      "usable_for_guangxi": false,
+      "use": "指标集、单位、方向、五级结构参照；不得用于广西项目阈值"
+    }
+  },
+  "missing_regions": {
+    "长江中下游区": "南岭丘陵山地林农区 42 个县所属大区，阈值完全缺失；不得回退西南区或华南区"
+  },
+  "indicators_todo": {
+    "note": "保留字段以兼容旧调用；实际待补清单见 indicator_catalog 与 --check 输出",
+    "threshold_pending_count": 26
+  }
+}

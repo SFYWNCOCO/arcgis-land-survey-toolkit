@@ -1,0 +1,77 @@
+{
+  "requested_provider": "deepseek-account",
+  "requested_model": "deepseek-flash",
+  "events": [
+    {
+      "type": "session",
+      "sessionId": "session-0f49f777-9f8e-4b4a-8a6e-5ef446a6a137",
+      "cwd": "D:\\work\\.openclaw"
+    },
+    {
+      "type": "tool_call",
+      "callId": "call_00_ET_snymrXzvSV1bAKMl584b6819",
+      "tool": "mcp__pro-ai-bridge__list_pro_sessions",
+      "input": {}
+    },
+    {
+      "type": "tool_result",
+      "callId": "call_00_ET_snymrXzvSV1bAKMl584b6819",
+      "status": "completed",
+      "result": "{\"sessions\": [{\"version\": \"0.2.0\", \"project\": \"D:\\\\work\\\\.openclaw\\\\temp\\\\pro-ai-v02-live-02\\\\BridgeSmoke.aprx\", \"map\": \"Bridge Map\", \"supports_project_guard\": true, \"bridge_ready\": true, \"pipe\": \"pro-ai-bridge-v1-52384\", \"process_id\": 52384, \"view_size\": {\"IsEmpty\": false, \"Width\": 1254, \"Height\": 835}, \"scale\": 493709.2023617999, \"dirty\": false, \"tools\": 25}], \"errors\": [], \"omitted\": 0}"
+    },
+    {
+      "type": "tool_call",
+      "callId": "call_00_J57vnwfdaA3V5BuNDwcJ0636",
+      "tool": "mcp__pro-ai-bridge__select_pro_session",
+      "input": {
+        "process_id": 52384
+      }
+    },
+    {
+      "type": "tool_result",
+      "callId": "call_00_J57vnwfdaA3V5BuNDwcJ0636",
+      "status": "completed",
+      "result": "{\"selected\": true, \"process_id\": 52384, \"project\": \"D:\\\\work\\\\.openclaw\\\\temp\\\\pro-ai-v02-live-02\\\\BridgeSmoke.aprx\", \"pipe\": \"\\\\\\\\.\\\\pipe\\\\pro-ai-bridge-v1-52384\"}"
+    },
+    {
+      "type": "tool_call",
+      "callId": "call_00_lGLBvpx1aR1I6hDRFJqU5141",
+      "tool": "mcp__pro-ai-bridge__get_status",
+      "input": {}
+    },
+    {
+      "type": "tool_result",
+      "callId": "call_00_lGLBvpx1aR1I6hDRFJqU5141",
+      "status": "completed",
+      "result": "{\"version\": \"0.2.0\", \"project\": \"D:\\\\work\\\\.openclaw\\\\temp\\\\pro-ai-v02-live-02\\\\BridgeSmoke.aprx\", \"map\": \"Bridge Map\", \"supports_project_guard\": true, \"bridge_ready\": true, \"pipe\": \"pro-ai-bridge-v1-52384\", \"process_id\": 52384, \"view_size\": {\"IsEmpty\": false, \"Width\": 1254, \"Height\": 835}, \"scale\": 493709.2023617999, \"dirty\": false, \"tools\": 25}"
+    },
+    {
+      "type": "tool_call",
+      "callId": "call_01_Oj2c4VKfCqRq3WmiksrR5196",
+      "tool": "mcp__pro-ai-bridge__list_layers",
+      "input": {}
+    },
+    {
+      "type": "tool_result",
+      "callId": "call_01_Oj2c4VKfCqRq3WmiksrR5196",
+      "status": "completed",
+      "result": "{\"layers\": [{\"name\": \"bridge_points\", \"uri\": \"CIMPATH=bridge_map/bridge_points.json\", \"type\": \"FeatureLayer\", \"visible\": true}], \"spatial_reference\": \"GCS_WGS_1984\"}"
+    },
+    {
+      "type": "tool_call",
+      "callId": "call_02_qWbBuLgRWAvuBwQHaj3p1535",
+      "tool": "mcp__pro-ai-bridge__list_jobs",
+      "input": {}
+    },
+    {
+      "type": "tool_result",
+      "callId": "call_02_qWbBuLgRWAvuBwQHaj3p1535",
+      "status": "completed",
+      "result": "{\"jobs\": [], \"latest_export\": null}"
+    },
+    {
+      "type": "final",
+      "text": "只读测试已完成，整个过程只调用了 Pro AI Bridge 的 MCP 工具，没有使用终端、文件或网络工具，也没有更改工程、数据和地图。\n\n**结果**\n\n| 项目 | 值 |\n|---|---|\n| 目标工程 | `D:\\work\\.openclaw\\temp\\pro-ai-v02-live-02\\BridgeSmoke.aprx` |\n| 工程名 | BridgeSmoke.aprx |\n| 活动地图 | Bridge Map |\n| 进程 ID / 桥接版本 | 52384 / 0.2.0（pipe `pro-ai-bridge-v1-52384`） |\n| 图层数 | 1 个：`bridge_points`（FeatureLayer，可见；坐标系为 GCS_WGS_1984） |\n| 最近任务 | 无：`jobs` 为空数组，`latest_export` 为 null |\n\n**过程要点**\n- `list_pro_sessions` 只返回 1 个会话，其工程路径包含 `pro-ai-v02-live-02`，`bridge_ready` 为 true，`dirty` 为 false，表示工程未修改。\n- `select_pro_session(52384)` 返回 `selected: true`，绑定成功后 `get_status` 也返回同一工程路径与进程号，说明绑定结果一致。\n- 全程没有调用 `add_layer`、`run_geoprocessing`、`save_project`、`export_map` 等写操作；工程状态中的 `dirty: false` 也支持“未改动”的结论。\n\n**限制**：这次只验证了桥接连通与读取接口；要素条数、字段结构或任务历史的具体内容都没有进一步查询，因为你没有要求查询，而且这些查询也不属于本次指定的步骤。"
+    }
+  ]
+}

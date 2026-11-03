@@ -1,0 +1,17 @@
+{
+  "version": "0.5.2",
+  "final_package_installed": true,
+  "addin_sha256": "dc1fb6902874e60e9ceb9203d183b4182e3767dbd2c7c3e16cacd1a5bda00d82",
+  "loaded_dll_sha256": "92c3b9f2ceb2f68874be67c8c3e4680574088eb21a62659d4a363e648e89c9f8",
+  "loaded_dll_matches_build": true,
+  "non_live_tests_passed": 98,
+  "final_live_tests_passed": 4,
+  "live_seconds": 50.03,
+  "native_calls": 169,
+  "native_tools": 35,
+  "test_project": "D:\\work\\.openclaw\\temp\\pro-ai-v052-final-live-01\\BridgeSmoke.aprx",
+  "ui_control_tree_verified": true,
+  "ui_empty_nonempty_send_state_verified": true,
+  "ui_physical_input_verified": false,
+  "ui_screenshot_verified": false
+}

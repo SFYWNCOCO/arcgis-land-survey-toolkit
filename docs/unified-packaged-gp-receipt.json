@@ -1,0 +1,10 @@
+{
+  "package": "D:\\work\\.openclaw\\ARCGIS\\land_survey_toolkit\\addin\\dist\\SupplementaryCultivatedLandAcceptance_1.61_20261028_050919_011525.esriAddInX",
+  "runtime": "3.9.16 [MSC v.1931 64 bit (AMD64)]",
+  "source_count": 1,
+  "gp_status": 4,
+  "max_severity": 0,
+  "messages": "开始时间: 2026年10月28日 5:18:53\n[PASS] 坐标系：WGS_1984_Web_Mercator_Auxiliary_Sphere\n[PASS] 图斑编号：OBJECTID\n[PASS] 处理范围：本次 1 个图斑；整个数据源\n[PASS] 成果目录：可用于新任务\n[PASS] 外业表格模板：附录 D/E/F 单表模板齐全：表单_附录D_实地踏勘表.docx、表单_附录E_土壤样品采集记录表.docx、表单_附录F_补充耕地质量鉴定意见表.docx\n资料检查结果：PASS\n运行 成功，结束时间： 2026年10月28日 5:18:54 (历时: 1.03 秒)",
+  "dynamic_gp_check": "readonly_preflight_PASS",
+  "network_download": false
+}

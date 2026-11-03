@@ -1,0 +1,29 @@
+{
+  "pro_version": "0.3.0",
+  "project": "temp/pro-ai-v03-live-03/BridgeSmoke.aprx",
+  "observed": [
+    "侧栏显示0.3已就绪",
+    "当前工程和地图标签",
+    "任务自动刷新并显示CopyFeatures冲突失败消息",
+    "导出文件与目录按钮启用"
+  ],
+  "click": {
+    "button": "检查 Pro / DSH 连接",
+    "status": "not_verified",
+    "error": "coordinate input geometry is unavailable"
+  },
+  "screenshot": {
+    "status": "unavailable",
+    "error": "window capture timed out: timed out waiting on channel"
+  },
+  "dsh_desktop": {
+    "started": true,
+    "observed_model_selector": "DeepSeek-V4.1-Flash · High",
+    "actual_model_identity": "not_returned",
+    "mcp_python_child": {
+      "process_id": 44252,
+      "parent_process_id": 45044
+    },
+    "messages_sent": false
+  }
+}

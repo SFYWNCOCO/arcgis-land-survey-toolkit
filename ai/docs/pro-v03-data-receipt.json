@@ -1,0 +1,19 @@
+{
+  "project": "D:\\work\\.openclaw\\temp\\pro-ai-v03-live-03\\BridgeSmoke.aprx",
+  "buffer_areas_m2": [
+    45188.749733125995,
+    45188.74702096269,
+    45188.74504912204
+  ],
+  "expected_area_m2": 45238.93421169302,
+  "area_tolerance": 0.02,
+  "clip_sample_ids": [
+    1,
+    2
+  ],
+  "dissolve_groups": [
+    "A",
+    "B"
+  ],
+  "spatial_reference": "GCS_WGS_1984"
+}

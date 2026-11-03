@@ -1,0 +1,404 @@
+{
+ "version": "2026-10-08",
+ "title": "ArcGIS Pro 双尺度国土调查与工程制图标准档",
+ "sources": [
+  "广西壮族自治区自然资源厅：桂自然资办〔2024〕205号及广西2024年度国土变更调查实施方案（广西本地最终真源）",
+  "自然资源部：国土变更调查技术要求（年度适用）4.5、4.6、7.4、9.3.4",
+  "自然资源部：第三次全国国土调查技术规程 TD/T 1055-2019",
+  "GB/T 21010-2017 土地利用现状分类",
+  "GB/T 13989-2012 国家基本比例尺地形图分幅和编号",
+  "GB 35650-2017 国家基本比例尺地图测绘基本技术规定"
+ ],
+ "precedence": [
+  "广西205号正文及附件",
+  "广西2024年度国土变更调查实施方案",
+  "国家年度国土变更调查技术要求",
+  "本配置默认值"
+ ],
+ "math_basis": {
+  "horizontal": "2000国家大地坐标系（CGCS2000）",
+  "vertical": "1985国家高程基准",
+  "projection": "高斯-克吕格投影，3度分带",
+  "gk_epsg_by_zone": {
+   "35": 4523,
+   "36": 4524,
+   "37": 4525
+  }
+ },
+ "scales": {
+  "legal": {
+   "denominator": 10000,
+   "use": "年度国土变更调查法定成果"
+  },
+  "engineering": {
+   "denominator": 2000,
+   "use": "电线杆、水渠、CAD、RTK等工程细部"
+  }
+ },
+ "thresholds": {
+  "min_area_m2": {
+   "construction": 200,
+   "agriculture": 400,
+   "other": 600,
+   "desert_min": 1500
+  },
+  "dlbm_min_area_rule": {
+   "01": "agriculture",
+   "02": "agriculture",
+   "03": "agriculture",
+   "04": "agriculture",
+   "11": "other",
+   "12": "construction",
+   "1202": "construction",
+   "20": "construction",
+   "201": "construction",
+   "202": "construction",
+   "203": "construction",
+   "204": "construction",
+   "default": "other"
+  },
+  "boundary_mm": {
+   "obvious": 0.3,
+   "non_obvious": 1.0,
+   "source": "国家年度国土变更调查技术要求 9.3.4"
+  },
+  "supplementary_point_mm": {
+   "flat_hilly": 0.5,
+   "mountain": 1.0,
+   "max_factor": 2.0
+  },
+  "dom_rmse_m": {
+   "1:2000": {
+    "flat_hilly": 1.2,
+    "mountain": 1.6
+   },
+   "1:10000": {
+    "flat_hilly": 5.0,
+    "mountain": 7.5
+   }
+  },
+  "geometry_tolerance_m": {
+   "engineering_1_2000": 0.001,
+   "legal_1_10000": 0.01
+  },
+  "cad_georef_rmse_m": {
+   "engineering_1_2000": 0.5,
+   "legal_1_10000": 2.5
+  },
+  "confidence": {
+   "ai_initial": 0.5,
+   "ai_manual_review_below": 0.6,
+   "ai_final_min": 0.7
+  }
+ },
+ "common_fields": [
+  {
+   "name": "BSM",
+   "type": "TEXT",
+   "length": 32,
+   "alias": "标识码"
+  },
+  {
+   "name": "DLBM",
+   "type": "TEXT",
+   "length": 8,
+   "alias": "地类编码"
+  },
+  {
+   "name": "DLMC",
+   "type": "TEXT",
+   "length": 64,
+   "alias": "地类名称"
+  },
+  {
+   "name": "SOURCE",
+   "type": "TEXT",
+   "length": 16,
+   "alias": "来源",
+   "domain": "SOURCE_DOMAIN"
+  },
+  {
+   "name": "CONFIDENCE",
+   "type": "DOUBLE",
+   "alias": "置信度"
+  },
+  {
+   "name": "EDIT_STATUS",
+   "type": "TEXT",
+   "length": 16,
+   "alias": "编辑状态",
+   "domain": "EDIT_STATUS_DOMAIN"
+  },
+  {
+   "name": "DATE",
+   "type": "DATE",
+   "alias": "更新日期"
+  },
+  {
+   "name": "NOTES",
+   "type": "TEXT",
+   "length": 255,
+   "alias": "备注"
+  }
+ ],
+ "layers": {
+  "LC_Buildings": {
+   "geometry": "POLYGON",
+   "role": "legal",
+   "min_area_rule": "construction",
+   "description": "建筑/构筑物面"
+  },
+  "LC_Woodland": {
+   "geometry": "POLYGON",
+   "role": "legal",
+   "min_area_rule": "by_dlbm",
+   "description": "林地/园地等林草相关面"
+  },
+  "LC_Roads": {
+   "geometry": "POLYGON",
+   "role": "legal",
+   "min_area_rule": "construction",
+   "description": "道路路面面"
+  },
+  "LC_Road_Centerlines": {
+   "geometry": "POLYLINE",
+   "role": "engineering",
+   "description": "道路中心线"
+  },
+  "LC_Cultivated": {
+   "geometry": "POLYGON",
+   "role": "legal",
+   "min_area_rule": "agriculture",
+   "description": "耕地图斑"
+  },
+  "LC_Poles": {
+   "geometry": "POINT",
+   "role": "engineering",
+   "description": "电线杆点"
+  },
+  "LC_Reservoirs": {
+   "geometry": "POLYGON",
+   "role": "legal",
+   "min_area_rule": "by_dlbm",
+   "description": "水库/水面"
+  },
+  "LC_Channels": {
+   "geometry": "POLYLINE",
+   "role": "engineering",
+   "description": "水渠中心线"
+  },
+  "LC_Channel_Areas": {
+   "geometry": "POLYGON",
+   "role": "engineering",
+   "min_area_rule": "by_dlbm",
+   "description": "达到面状表达标准的水渠面"
+  },
+  "MON_Patches": {
+   "geometry": "POLYGON",
+   "role": "evidence",
+   "description": "下发监测图斑"
+  },
+  "CAD_Polyline": {
+   "geometry": "POLYLINE",
+   "role": "evidence",
+   "description": "配准后的CAD多段线"
+  },
+  "RTK_Points": {
+   "geometry": "POINT",
+   "role": "evidence",
+   "description": "RTK控制点和检查点"
+  }
+ },
+ "domains": {
+  "SOURCE_DOMAIN": [
+   [
+    "IMG_AI",
+    "影像AI"
+   ],
+   [
+    "IMG_MANUAL",
+    "影像人工"
+   ],
+   [
+    "CAD",
+    "CAD"
+   ],
+   [
+    "RTK",
+    "RTK"
+   ],
+   [
+    "MONITOR",
+    "监测图斑"
+   ],
+   [
+    "FIELD",
+    "外业"
+   ]
+  ],
+  "EDIT_STATUS_DOMAIN": [
+   [
+    "DRAFT",
+    "草稿"
+   ],
+   [
+    "REVIEW",
+    "待复核"
+   ],
+   [
+    "APPROVED",
+    "已审核"
+   ],
+   [
+    "REJECTED",
+    "已拒绝"
+   ]
+  ]
+ },
+ "topology": {
+  "name": "LAND_SURVEY_Topology",
+  "rules": [
+   {
+    "rule": "Must Not Self-Intersect (Line)",
+    "fc": "LC_Road_Centerlines"
+   },
+   {
+    "rule": "Must Not Self-Overlap (Line)",
+    "fc": "LC_Road_Centerlines"
+   },
+   {
+    "rule": "Must Be Single Part (Line)",
+    "fc": "LC_Road_Centerlines"
+   },
+   {
+    "rule": "Must Not Self-Intersect (Line)",
+    "fc": "LC_Channels"
+   },
+   {
+    "rule": "Must Not Self-Overlap (Line)",
+    "fc": "LC_Channels"
+   },
+   {
+    "rule": "Must Be Single Part (Line)",
+    "fc": "LC_Channels"
+   },
+   {
+    "rule": "Must Not Overlap (Area)",
+    "fc": "LC_Buildings"
+   },
+   {
+    "rule": "Must Not Overlap (Area)",
+    "fc": "LC_Woodland"
+   },
+   {
+    "rule": "Must Not Overlap (Area)",
+    "fc": "LC_Roads"
+   },
+   {
+    "rule": "Must Not Overlap (Area)",
+    "fc": "LC_Cultivated"
+   },
+   {
+    "rule": "Must Not Overlap (Area)",
+    "fc": "LC_Reservoirs"
+   },
+   {
+    "rule": "Must Not Overlap (Area)",
+    "fc": "LC_Channel_Areas"
+   }
+  ],
+  "optional_rules": [
+   {
+    "rule": "不能有悬挂点（线）",
+    "fc": "LC_Channels",
+    "note": "当水渠端点必须与水库/河流闭合时启用"
+   },
+   {
+    "rule": "不能有空隙（面）",
+    "fc": "LC_Cultivated",
+    "note": "仅在耕地连片覆盖且无道路/建设隔断时启用"
+   }
+  ]
+ },
+ "segmentation_profiles": {
+  "building": {
+   "spectral_detail": 16.0,
+   "spatial_detail": 17,
+   "min_segment_size": 20,
+   "max_segment_size": -1
+  },
+  "woodland": {
+   "spectral_detail": 17.0,
+   "spatial_detail": 18,
+   "min_segment_size": 150,
+   "max_segment_size": -1
+  },
+  "road": {
+   "spectral_detail": 14.0,
+   "spatial_detail": 18,
+   "min_segment_size": 20,
+   "max_segment_size": -1
+  },
+  "cultivated": {
+   "spectral_detail": 14.5,
+   "spatial_detail": 13,
+   "min_segment_size": 60,
+   "max_segment_size": -1
+  },
+  "water": {
+   "spectral_detail": 14.0,
+   "spatial_detail": 16,
+   "min_segment_size": 50,
+   "max_segment_size": -1
+  }
+ },
+ "ai_defaults": {
+  "extract_features": {
+   "mode": "Infer and Postprocess",
+   "confidence_threshold": 0.5,
+   "regularize_parcels": true,
+   "regularization_method": "Right Angles",
+   "smoothing_tolerance": 1.0,
+   "dangle_length": 5.0
+  },
+  "detect_objects": {
+   "nms": "NMS",
+   "max_overlap_ratio": 0.3,
+   "confidence_threshold": 0.6
+  },
+  "classify_pixels": {
+   "output_mode": "分类栅格 + 转面复核"
+  }
+ },
+ "cartography": {
+  "style_library": "第三次全国国土调查 ArcGIS 符号库（.stylx）",
+  "color_tolerance_rgb": 5,
+  "patterns": {
+   "cultivated": {
+    "type": "diagonal",
+    "angle_deg": 45,
+    "spacing_mm": 0.8
+   },
+   "woodland": {
+    "type": "cross_hatch",
+    "angles_deg": [
+     45,
+     135
+    ]
+   }
+  },
+  "line_width_mm": {
+   "cadastral_boundary_1_2000": 0.3,
+   "thematic_1_2000": [
+    0.1,
+    0.25
+   ],
+   "thematic_1_10000": [
+    0.1,
+    0.25
+   ]
+  },
+  "label_overlap_max": 0.15,
+  "export_dpi_min": 300
+ }
+}

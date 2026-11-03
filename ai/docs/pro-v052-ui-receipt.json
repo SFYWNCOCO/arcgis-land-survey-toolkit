@@ -1,0 +1,21 @@
+{
+  "version": "0.5.2",
+  "pid": 52988,
+  "control_tree_verified": true,
+  "empty_nonempty_send_state_verified": true,
+  "physical_input_verified": false,
+  "screenshot_verified": false,
+  "screenshot_error": "window capture timed out",
+  "set_value_response_error": "wait for accessibility set value: timed out waiting on channel",
+  "set_value_effect_read_back": true,
+  "receipts": [
+    {
+      "name": "nonempty_after_set_value_timeout",
+      "tree": "\t\t\t\t\t\t\t\t\t\t\t126 编辑 (settable, string) 输入地图操作要求 Description: Ctrl+Enter发送；Esc停止当前模型请求，GP任务需从任务列表取消。 Value: 交互测试草稿，不发送\n\t\t\t\t\t\t\t\t\t\t\t127 文本 Ctrl+Enter发送 · Enter换行 10/16000\n\t\t\t\t\t\t\t\t\t\t\t128 按钮 发送"
+    },
+    {
+      "name": "empty_restored",
+      "tree": "\t\t\t\t\t\t\t\t\t\t\t122 组 任务与导出（13） · 有导出\n\t\t\t\t\t\t\t\t\t\t\t\t123 按钮 任务与导出（13） · 有导出 ID: HeaderSite\n\t\t\t\t\t\t\t\t\t\t\t\t\t124 文本 任务与导出（13） · 有导出\n\t\t\t\t\t\t\t\t\t\t\t\t\t297 编辑 所选任务详情 Value: management.GetCount — 成功 3 开始时间: 2026年10月26日 18:06:37; 行计数 = 3; 运行 成功，结束时间： 2026年10月26日 18:06:37 (历时: 0.25 秒) 开始：10-26 18:06:36 结束：10-26 18:06:37 耗时：0.6 秒 输出：无成功输出\n\t\t\t\t\t\t\t\t\t\t\t\t\t300 按钮 (disabled) 取消所选任务\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t301 文本 (disabled) 取消所选任务\n\t\t\t\t\t\t\t\t\t\t\t126 编辑 (settable, string) 输入地图操作要求 Description: Ctrl+Enter发送；Esc停止当前模型请求，GP任务需从任务列表取消。\n\t\t\t\t\t\t\t\t\t\t\t127 文本 Ctrl+Enter发送 · Enter换行 0/16000\n\t\t\t\t\t\t\t\t\t\t\t128 按钮 (disabled) 发送\n\t\t\t\t\t\t\t\t\t\t\t134 复选框 跟随新消息 Description: 阅读历史记录时可取消勾选，新增消息不会跳到末尾。\n\t\t\t\t\t\t\t\t\t\t\t\t135 文本 跟随新消息\n\t\t\t\t\t\t\t\t\t\t\t136 编辑 聊天与工具执行记录 Value: Pro AI Bridge 0.5.2 已就绪。输入“列出当前图层”开始；Ctrl+Enter发送，Enter换行。任务与导出可在下方展开查看，状态自动刷新。使用DSH时无需填写侧栏模型设置。\nPro AI Bridge 0.5.2 已就绪。输入“列出当前图层”开始；Ctrl+Enter发送，Enter换行。任务与导出可在下方展开查看，状态自动刷新。使用DSH时无需填写侧栏模型设置。"
+    }
+  ]
+}

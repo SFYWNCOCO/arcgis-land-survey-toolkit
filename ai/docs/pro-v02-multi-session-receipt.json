@@ -1,0 +1,52 @@
+[
+  {
+    "selection": {
+      "selected": true,
+      "process_id": 35868,
+      "project": "D:\\work\\.openclaw\\temp\\pro-ai-v02-live-01\\BridgeSmoke.aprx",
+      "pipe": "\\\\.\\pipe\\pro-ai-bridge-v1-35868"
+    },
+    "status": {
+      "version": "0.2.0",
+      "project": "D:\\work\\.openclaw\\temp\\pro-ai-v02-live-01\\BridgeSmoke.aprx",
+      "map": "Bridge Map",
+      "supports_project_guard": true,
+      "bridge_ready": true,
+      "pipe": "pro-ai-bridge-v1-35868",
+      "process_id": 35868,
+      "view_size": {
+        "IsEmpty": false,
+        "Width": 1254,
+        "Height": 835
+      },
+      "scale": 11185.16401775139,
+      "dirty": false,
+      "tools": 25
+    }
+  },
+  {
+    "selection": {
+      "selected": true,
+      "process_id": 52384,
+      "project": "D:\\work\\.openclaw\\temp\\pro-ai-v02-live-02\\BridgeSmoke.aprx",
+      "pipe": "\\\\.\\pipe\\pro-ai-bridge-v1-52384"
+    },
+    "status": {
+      "version": "0.2.0",
+      "project": "D:\\work\\.openclaw\\temp\\pro-ai-v02-live-02\\BridgeSmoke.aprx",
+      "map": "Bridge Map",
+      "supports_project_guard": true,
+      "bridge_ready": true,
+      "pipe": "pro-ai-bridge-v1-52384",
+      "process_id": 52384,
+      "view_size": {
+        "IsEmpty": false,
+        "Width": 1254,
+        "Height": 835
+      },
+      "scale": 11185.16401775139,
+      "dirty": false,
+      "tools": 25
+    }
+  }
+]

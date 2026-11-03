@@ -1,0 +1,99 @@
+[
+  {
+    "type": "session",
+    "sessionId": "session-61c70c27-1916-4530-8c00-7baeb16b69f2",
+    "cwd": "D:\\work\\.openclaw"
+  },
+  {
+    "type": "tool_call",
+    "callId": "call_00_E1O4qaAFoa1SaayXYGyC2632",
+    "tool": "mcp__pro-ai-bridge__list_pro_sessions",
+    "input": {}
+  },
+  {
+    "type": "tool_result",
+    "callId": "call_00_E1O4qaAFoa1SaayXYGyC2632",
+    "status": "completed",
+    "result": "{\"sessions\": [{\"version\": \"0.3.0\", \"project\": \"D:/work/.openclaw/temp/pro-ai-v03-live-01/BridgeSmoke.aprx\", \"map\": \"Bridge Map\", \"map_uri\": \"CIMPATH=map/map.json\", \"supports_project_guard\": true, \"supports_map_guard\": true, \"bridge_ready\": true, \"pipe\": \"pro-ai-bridge-v1-39044\", \"process_id\": 39044, \"view_size\": {\"IsEmpty\": false, \"Width\": 1254, \"Height\": 835}, \"scale\": 11185.16401775139, \"dirty\": false, \"tools\": 33}], \"errors\": [], \"omitted\": 0}"
+  },
+  {
+    "type": "tool_call",
+    "callId": "call_00_NBczNPtoDmWJLppY5QFl9883",
+    "tool": "mcp__pro-ai-bridge__select_pro_session",
+    "input": {
+      "process_id": 39044
+    }
+  },
+  {
+    "type": "tool_result",
+    "callId": "call_00_NBczNPtoDmWJLppY5QFl9883",
+    "status": "completed",
+    "result": "{\"selected\": true, \"process_id\": 39044, \"project\": \"D:/work/.openclaw/temp/pro-ai-v03-live-01/BridgeSmoke.aprx\", \"map_uri\": \"CIMPATH=map/map.json\", \"pipe\": \"\\\\\\\\.\\\\pipe\\\\pro-ai-bridge-v1-39044\"}"
+  },
+  {
+    "type": "tool_call",
+    "callId": "call_00_s0RpKXVjfXJh8nuCxZaI7688",
+    "tool": "mcp__pro-ai-bridge__get_status",
+    "input": {}
+  },
+  {
+    "type": "tool_result",
+    "callId": "call_00_s0RpKXVjfXJh8nuCxZaI7688",
+    "status": "completed",
+    "result": "{\"version\": \"0.3.0\", \"project\": \"D:/work/.openclaw/temp/pro-ai-v03-live-01/BridgeSmoke.aprx\", \"map\": \"Bridge Map\", \"map_uri\": \"CIMPATH=map/map.json\", \"supports_project_guard\": true, \"supports_map_guard\": true, \"bridge_ready\": true, \"pipe\": \"pro-ai-bridge-v1-39044\", \"process_id\": 39044, \"view_size\": {\"IsEmpty\": false, \"Width\": 1254, \"Height\": 835}, \"scale\": 11185.16401775139, \"dirty\": false, \"tools\": 33}"
+  },
+  {
+    "type": "tool_call",
+    "callId": "call_01_s14mkIaxry8BpspGz0g84019",
+    "tool": "mcp__pro-ai-bridge__list_maps",
+    "input": {}
+  },
+  {
+    "type": "tool_result",
+    "callId": "call_01_s14mkIaxry8BpspGz0g84019",
+    "status": "completed",
+    "result": "{\"maps\": [{\"name\": \"Bridge Map\", \"uri\": \"CIMPATH=map/map.json\"}, {\"name\": \"Bridge Other Map\", \"uri\": \"CIMPATH=bridge_map1/bridge_map1.json\"}, {\"name\": \"Bridge Map1\", \"uri\": \"CIMPATH=bridge_map1/bridge_map12.json\"}], \"layouts\": [{\"name\": \"Bridge Layout\", \"uri\": \"CIMPATH=layout/a4_portrait.xml\"}]}"
+  },
+  {
+    "type": "tool_call",
+    "callId": "call_02_6pfyURZlHE5Z0RQzglv55140",
+    "tool": "mcp__pro-ai-bridge__list_layers",
+    "input": {}
+  },
+  {
+    "type": "tool_result",
+    "callId": "call_02_6pfyURZlHE5Z0RQzglv55140",
+    "status": "completed",
+    "result": "{\"layers\": [{\"name\": \"bridge_points\", \"uri\": \"CIMPATH=bridge_map/bridge_points.json\", \"type\": \"FeatureLayer\", \"visible\": true}], \"spatial_reference\": \"GCS_WGS_1984\"}"
+  },
+  {
+    "type": "tool_call",
+    "callId": "call_03_8OOdV29twZf16JiapsnX2291",
+    "tool": "mcp__pro-ai-bridge__list_jobs",
+    "input": {}
+  },
+  {
+    "type": "tool_result",
+    "callId": "call_03_8OOdV29twZf16JiapsnX2291",
+    "status": "completed",
+    "result": "{\"jobs\": [{\"job_id\": \"0c3e8810e6cd48cfbd920de3bbf36b79\", \"project\": \"D:/work/.openclaw/temp/pro-ai-v03-live-01/BridgeSmoke.aprx\", \"tool\": \"management.CopyFeatures\", \"status\": \"failed\", \"value\": \"\", \"messages\": \"ERROR 000733: 输出要素类: 与输入 输入要素 相同\", \"cancel_requested\": false}, {\"job_id\": \"45190893da0b4f24a9fc2f139e7d912e\", \"project\": \"D:/work/.openclaw/temp/pro-ai-v03-live-01/BridgeSmoke.aprx\", \"tool\": \"analysis.Buffer\", \"status\": \"cancelled\", \"value\": \"\", \"messages\": \"\", \"cancel_requested\": true}, {\"job_id\": \"570462d517694885bb92aa374b1d76c9\", \"project\": \"D:/work/.openclaw/temp/pro-ai-v03-live-01/BridgeSmoke.aprx\", \"tool\": \"management.Dissolve\", \"status\": \"succeeded\", \"value\": \"D:\\\\work\\\\.openclaw\\\\temp\\\\pro-ai-v03-live-01\\\\smoke.gdb\\\\dissolve_result\", \"messages\": \"开始时间: 2026年10月26日 6:12:55; 正在对属性进行排序...; 正在融合...; 运行 成功，结束时间： 2026年10月26日 6:12:55 (历时: 0.66 秒)\", \"cancel_requested\": false}, {\"job_id\": \"13d65362fbc343bb92e6297388f9c837\", \"project\": \"D:/work/.openclaw/temp/pro-ai-v03-live-01/BridgeSmoke.aprx\", \"tool\": \"analysis.Clip\", \"status\": \"succeeded\", \"value\": \"D:\\\\work\\\\.openclaw\\\\temp\\\\pro-ai-v03-live-01\\\\smoke.gdb\\\\clip_result\", \"messages\": \"开始时间: 2026年10月26日 6:12:53; 正在分析输入要素...; 正在融合裁剪要素...; 正在裁剪输入要素...; 运行 成功，结束时间： 2026年10月26日 6:12:53 (历时: 0.76 秒)\", \"cancel_requested\": false}, {\"job_id\": \"6f47116123184c4b9b24fb69aa62bb90\", \"project\": \"D:/work/.openclaw/temp/pro-ai-v03-live-01/BridgeSmoke.aprx\", \"tool\": \"analysis.Buffer\", \"status\": \"succeeded\", \"value\": \"D:\\\\work\\\\.openclaw\\\\temp\\\\pro-ai-v03-live-01\\\\smoke.gdb\\\\buffer_result\", \"messages\": \"开始时间: 2026年10月26日 6:12:49; 运行 成功，结束时间： 2026年10月26日 6:12:51 (历时: 1.81 秒)\", \"cancel_requested\": false}, {\"job_id\": \"fa21dfbb71034a5fbb4437d66b82c1fc\", \"project\": \"D:/work/.openclaw/temp/pro-ai-v03-live-01/BridgeSmoke.aprx\", \"tool\": \"management.GetCount\", \"status\": \"succeeded\", \"value\": \"3\", \"messages\": \"开始时间: 2026年10月26日 6:12:47; 行计数 = 3; 运行 成功，结束时间： 2026年10月26日 6:12:47 (历时: 0.23 秒)\", \"cancel_requested\": true}], \"latest_export\": {\"path\": \"D:\\\\work\\\\.openclaw\\\\temp\\\\pro-ai-v03-live-01\\\\layout.pdf\", \"bytes\": 7743, \"tool\": \"export_layout\"}}"
+  },
+  {
+    "type": "tool_call",
+    "callId": "call_00_JZ1xfJbLDJkPdxqLrluf7223",
+    "tool": "mcp__pro-ai-bridge__describe_features",
+    "input": {
+      "input": "bridge_points"
+    }
+  },
+  {
+    "type": "tool_result",
+    "callId": "call_00_JZ1xfJbLDJkPdxqLrluf7223",
+    "status": "completed",
+    "result": "{\"Path\": \"D:\\\\work\\\\.openclaw\\\\temp\\\\pro-ai-v03-live-01\\\\smoke.gdb\\\\bridge_points\", \"Geometry\": \"Point\", \"SpatialReference\": \"GEOGCS[\\\"GCS_WGS_1984\\\",DATUM[\\\"D_WGS_1984\\\",SPHEROID[\\\"WGS_1984\\\",6378137.0,298.257223563]],PRIMEM[\\\"Greenwich\\\",0.0],UNIT[\\\"Degree\\\",0.0174532925199433]]\", \"Geographic\": true, \"Fields\": {\"OBJECTID\": \"OID\", \"Shape\": \"Geometry\", \"sample_id\": \"Integer\", \"group_id\": \"String\"}}"
+  },
+  {
+    "type": "final",
+    "text": "验收通过：工程已绑定，只读检查完成，未做任何地图修改。\n\n## 会话绑定\n`list_pro_sessions` 仅一个实例：PID **39044**，工程 `D:/work/.openclaw/temp/pro-ai-v03-live-01/BridgeSmoke.aprx`，bridge_ready=true，`select_pro_session` 已命中该进程（管道 pro-ai-bridge-v1-39044）。\n\n## 插件与工程状态（get_status）\n| 项 | 值 |\n|---|---|\n| 插件版本 | 0.3.0 |\n| 工具总数 | 33 |\n| 当前地图 | Bridge Map（CIMPATH=map/map.json） |\n| 守卫 | project_guard / map_guard 均支持 |\n| 工程脏标记 | false（未保存改动） |\n| 视图 | 1254×835，比例尺 ≈ 1:11185 |\n\n## 地图与布局（list_maps）\n地图 3 个：Bridge Map（活动）、Bridge Other Map、Bridge Map1；布局 1 个：Bridge Layout（A4 纵向）。\n\n## 图层（list_layers）\n活动地图仅 1 个要素图层：`bridge_points`（FeatureLayer，可见）；图层空间参考记为 GCS_WGS_1984。\n\n## 点图层结构（describe_features）\n- 数据源：`...\\smoke.gdb\\bridge_points`，几何类型 **Point**\n- 空间参考：**GCS_WGS_1984**（D_WGS_1984，长半轴 6378137.0，扁率倒数 298.257223563，单位 Degree，Geographic=true）\n- 字段 4 个：OBJECTID(OID)、Shape(Geometry)、sample_id(Integer)、group_id(String)\n\n## 任务与取消状态（list_jobs）\n- 被取消的任务：`45190893da0b4f24a9fc2f139e7d912e`（analysis.Buffer），最终状态 **cancelled**，cancel_requested=true，无返回值。\n- 另有一条 `fa21dfbb…`（management.GetCount）cancel_requested=true，但最终状态 **succeeded**、值 3 —— 取消请求来晚于执行完成，属正常收尾。\n- 其余：Dissolve、Clip、Buffer 成功；CopyFeatures 因输出与输入相同报 ERROR 000733 失败。\n\n## 风险与限制\n取消状态仅依据桥接任务的最终状态字段判定，未读回临时输出是否残留；本次全程只读，未导出、未改符号或选择。输出中不含任何凭据信息。\n\n补充一点：`get_status` 把管道名返回为 `pro-ai-bridge-v1-39044`，`select_pro_session` 返回带命名空间前缀的实际管道 `\\\\.\\pipe\\pro-ai-bridge-v1-39044`；两者一致，仅显示形式不同，不影响连接。"
+  }
+]

@@ -1,0 +1,105 @@
+{
+  "purpose": "Public real Sentinel-2 sample for pipeline gap research; clipped to a small area around synthetic demo geometry (not a real acceptance parcel).",
+  "clip_epsg": 32648,
+  "clip_bbox_m": [
+    811511.5268458826,
+    2573806.749791282,
+    812174.9325233984,
+    2574470.1554687982
+  ],
+  "items": [
+    {
+      "phase": "before",
+      "id": "S2C_T48QZL_20251125T032458_L2A",
+      "date": "2025-11-25T03:31:51.993000Z",
+      "cloud_pct": 0.238961,
+      "platform": "sentinel-2c",
+      "epsg": 32648,
+      "assets": {
+        "B04": {
+          "path": "before_B04_clip.tif",
+          "source_href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/48/Q/ZL/2025/11/S2C_T48QZL_20251125T032458_L2A/B04.tif",
+          "gsd_m": 10,
+          "scale": 0.0001,
+          "offset": -0.1,
+          "nodata": 0,
+          "width": 67,
+          "height": 68,
+          "epsg": null,
+          "bytes": 10730
+        },
+        "B08": {
+          "path": "before_B08_clip.tif",
+          "source_href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/48/Q/ZL/2025/11/S2C_T48QZL_20251125T032458_L2A/B08.tif",
+          "gsd_m": 10,
+          "scale": 0.0001,
+          "offset": -0.1,
+          "nodata": 0,
+          "width": 67,
+          "height": 68,
+          "epsg": null,
+          "bytes": 12006
+        },
+        "SCL": {
+          "path": "before_SCL_clip.tif",
+          "source_href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/48/Q/ZL/2025/11/S2C_T48QZL_20251125T032458_L2A/SCL.tif",
+          "gsd_m": 20,
+          "scale": null,
+          "offset": null,
+          "nodata": 0,
+          "width": 34,
+          "height": 34,
+          "epsg": null,
+          "bytes": 1762
+        }
+      }
+    },
+    {
+      "phase": "after",
+      "id": "S2B_T48QZL_20251230T033041_L2A",
+      "date": "2025-12-30T03:31:41.814000Z",
+      "cloud_pct": 29.744178,
+      "platform": "sentinel-2b",
+      "epsg": 32648,
+      "assets": {
+        "B04": {
+          "path": "after_B04_clip.tif",
+          "source_href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/48/Q/ZL/2025/12/S2B_T48QZL_20251230T033041_L2A/B04.tif",
+          "gsd_m": 10,
+          "scale": 0.0001,
+          "offset": -0.1,
+          "nodata": 0,
+          "width": 67,
+          "height": 68,
+          "epsg": null,
+          "bytes": 9966
+        },
+        "B08": {
+          "path": "after_B08_clip.tif",
+          "source_href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/48/Q/ZL/2025/12/S2B_T48QZL_20251230T033041_L2A/B08.tif",
+          "gsd_m": 10,
+          "scale": 0.0001,
+          "offset": -0.1,
+          "nodata": 0,
+          "width": 67,
+          "height": 68,
+          "epsg": null,
+          "bytes": 11550
+        },
+        "SCL": {
+          "path": "after_SCL_clip.tif",
+          "source_href": "https://e84-earth-search-sentinel-data.s3.us-west-2.amazonaws.com/sentinel-2-c1-l2a/48/Q/ZL/2025/12/S2B_T48QZL_20251230T033041_L2A/SCL.tif",
+          "gsd_m": 20,
+          "scale": null,
+          "offset": null,
+          "nodata": 0,
+          "width": 34,
+          "height": 34,
+          "epsg": null,
+          "bytes": 1675
+        }
+      }
+    }
+  ],
+  "license": "Copernicus Sentinel data: free, full and open; retain source attribution and source metadata."
+}

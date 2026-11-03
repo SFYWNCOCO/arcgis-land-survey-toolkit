@@ -1,0 +1,14 @@
+{
+  "path": "<构建产物>/addin/dist/<安装包>.esriAddInX",
+  "entries": 216,
+  "bytes": 1064386,
+  "sha256": "82B616E80B1204D145C98E1C2EF8836D93CE2DD79EF64BEE9877444A789B0BB4",
+  "dll_sha256": "45A506BEB7AF5A81C3F5A4E0B63D9608045959B1023F7B483FF66B5926D3BE9E",
+  "dll_bytes": 808960,
+  "version": "1.82",
+  "source_commit": "public-snapshot",
+  "source_dirty_count": 0,
+  "source_dirty": [],
+  "built_at": "2026-11-03T19:38:25+08:00",
+  "source": "addin/dist/build-receipt.json"
+}

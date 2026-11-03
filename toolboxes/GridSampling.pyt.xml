@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xml:lang="zh"><toolbox name="GridSampling" alias="gridsampling"><arcToolboxHelpPath>d:\program files\arcgis\pro\Resources\Help\gp</arcToolboxHelpPath><toolsets/></toolbox><dataIdInfo><idCitation><resTitle>GridSampling</resTitle></idCitation><idAbs>资料检查、执行、继续和取消；全部图层、定义查询或当前选择范围。输出为待人工确认的采样设计资料。</idAbs></dataIdInfo><Esri><ModDate>20261102</ModDate><ModTime>175303</ModTime></Esri><distInfo><distributor><distorFormat><formatName>ArcToolbox Toolbox</formatName></distorFormat></distributor></distInfo></metadata>

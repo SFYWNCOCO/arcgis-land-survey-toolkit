@@ -1,0 +1,13 @@
+{
+  "project": "temp/pro-ai-v04-live-02/BridgeSmoke.aprx",
+  "version": "0.4",
+  "observed": [
+    "任务开始与结束时间",
+    "耗时与无成功输出提示",
+    "所选任务为失败的CopyFeatures时，加载所选任务结果按钮禁用",
+    "图层树显示由DSH新工具加载的buffer_result"
+  ],
+  "button_click_verified": false,
+  "screenshot_verified": false,
+  "reason": "宿主截图/坐标通道故障仍未解决；本轮仅读取控件，未继续盲发按键"
+}

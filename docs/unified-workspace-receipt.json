@@ -1,0 +1,56 @@
+{
+  "workspace": [
+    {
+      "registered": true,
+      "opened": true,
+      "page": "sampling",
+      "requested_page": "sampling",
+      "assistant_draft_chars": 0,
+      "sampling_project_name_chars": 0,
+      "assistant_created": true,
+      "sampling_created": true,
+      "sampling_busy": false
+    },
+    {
+      "registered": true,
+      "opened": true,
+      "page": "assistant",
+      "requested_page": "assistant",
+      "assistant_draft_chars": 0,
+      "sampling_project_name_chars": 0,
+      "assistant_created": true,
+      "sampling_created": true,
+      "sampling_busy": false
+    },
+    {
+      "registered": true,
+      "opened": true,
+      "page": "sampling",
+      "requested_page": "sampling",
+      "assistant_draft_chars": 0,
+      "sampling_project_name_chars": 0,
+      "assistant_created": true,
+      "sampling_created": true,
+      "sampling_busy": false
+    },
+    {
+      "registered": true,
+      "opened": true,
+      "page": "assistant",
+      "requested_page": "assistant",
+      "assistant_draft_chars": 0,
+      "sampling_project_name_chars": 0,
+      "assistant_created": true,
+      "sampling_created": true,
+      "sampling_busy": false
+    }
+  ],
+  "sampling_bridge": {
+    "status": "PASS",
+    "process_id": 35396,
+    "map_name": "Bridge Map",
+    "map_uri": "CIMPATH=map/map.json",
+    "layer_count": 2,
+    "layers": null
+  }
+}
