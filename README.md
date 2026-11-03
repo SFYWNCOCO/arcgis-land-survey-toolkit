@@ -198,3 +198,9 @@ CAD 模式生成 `CAD_Converted` 要素数据集或图层组；配准后的多�
 - 标注重叠率不超过 15%，导出 PDF 字体嵌入，DPI 不低于 300。
 - 未提供实际 GDB、CAD、RTK 和正式符号库前，颜色、地理配准残差、标注重叠和现场变化认定属于未验证项，不得写成已完成。
 
+## 7. 许可证
+
+- 本仓库根目录采用 MIT 许可，见 LICENSE。
+- i/ 子目录另有 MIT 许可（i/LICENSE）与上游 MIT 许可（i/LICENSE-upstream.txt、i/NOTICE.md）。
+- endor/docx/ 为 python-docx（MIT），见 endor/LICENSE-python-docx.txt。
+- docs/、	emplates/ 中涉及广西补充耕地质量验收作业指导书与附录 D–F 原表的内容来自用户提供的公开资料；	estdata/real_sentinel2_wuming_probe/ 含 Copernicus Sentinel-2 开放数据（来源与日期见该目录 README）。再分发前请自行确认授权范围。
